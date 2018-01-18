@@ -1,0 +1,236 @@
+/** TIPS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+	* color
+	* background
+
+	* whidth
+	* height
+	* margin
+	* padding
+
+	* font-family
+	* font-size
+	* text-align
+	* text-transform
+	* letter-spacing
+
+	* display
+	* flex-direction
+	* justify-content
+	* align-items
+
+	* position
+	* top bottom left right
+	* z-index
+	* opacity
+
+	* transition
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* FONTS ----------------------------------------*/
+	@font-face {
+		font-family: "Josefin Sans";
+	    src: url('../fonts/JosefinSans-Regular.ttf');
+	}
+	@font-face {
+		font-family: "JosefinSans-Bold";
+		src: url('../fonts/JosefinSans-Bold.ttf');
+	}
+	@font-face {
+		font-family: "JosefinSans-SemiBold";
+		src: url('../fonts/JosefinSans-SemiBold.ttf');
+	}
+	@font-face {
+		font-family: "JosefinSans-Light";
+		src: url('../fonts/JosefinSans-Light.ttf');
+	}
+
+/* GLOBAL ---------------------------------------*/
+	body {
+		background: #000;
+		color: #fff;
+
+		padding: 12px;
+
+		font-family: "JosefinSans-Light", Arial;
+		height: 200vh;
+
+		cursor: url(../img/cursor.png) 2.5 2.5, auto;
+	}
+	.title {
+		font-size: 24px;
+		font-family: "JosefinSans-SemiBold", Arial;
+	}
+	.gl-line {
+		background: #33CCA0;
+
+		width: 185px;
+		height: 5px;
+		margin: 25px;
+	}
+
+/* FIXED ----------------------------------------*/
+	.decoTop {
+		width: 25px;
+		height: 25px;
+		
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		position: fixed;
+		top: 12px;
+		left: 12px;
+	}
+	.decoBottom {
+		width: 25px;
+		height: 25px;
+
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		flex-wrap: wrap-reverse;
+
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+	}
+	.btt {
+		color: #33CCA0;
+
+		font-size: 45px;
+
+		position: fixed;
+		bottom: 12px;
+		left: 12px;
+
+		cursor: url(../img/cursor_link.png) 12 12, auto;
+	}
+	.square {
+		background: #33CCA0;
+
+		width: 10px;
+		height: 10px;
+		margin-bottom: 5px;
+	}
+	.menu {
+		width: 30px;
+		height: 19px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		position: fixed;
+		top: 12px;
+		right: 12px;
+
+		cursor: url(../img/cursor_link.png) 12 12, auto;
+	}
+	.line {
+		background: #33CCA0;
+
+		width: 30px;
+		height: 3px;
+	}
+	.line-short {
+		background: #33CCA0;
+
+		width: 20px;
+		height: 3px;
+
+		position: relative;
+		right: -10px;
+	}
+
+/* HOME -----------------------------------------*/
+#home {
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+#home h2 {
+
+	text-align: center;
+	letter-spacing: 0.25em;
+	
+}
+
+
+
+
+.appearText {
+	-webkit-animation: appearText 0.666s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: appearText 0.666s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes appearText {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appearText {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.appear {
+	-webkit-animation: appear 0.666s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+	        animation: appear 0.666s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
