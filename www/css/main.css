@@ -51,16 +51,37 @@
 		background: #000;
 		color: #fff;
 
-		padding: 12px;
-
 		font-family: "JosefinSans-Light", Arial;
-		height: 200vh;
+		font-size: 20px;
 
 		cursor: url(../img/cursor.png) 2.5 2.5, auto;
+	}
+	a {
+		cursor: url(../img/cursor_link.png) 12 12, pointer;
 	}
 	.title {
 		font-size: 24px;
 		font-family: "JosefinSans-SemiBold", Arial;
+	}
+	.text {
+		line-height: 1.25em;
+	}
+	.textLink {
+		color: #CDFFDB;
+
+		font-family: "JosefinSans-Regular";
+		text-decoration: none;
+
+		position: relative;
+	}
+	.link {
+		color: #CDFFDB;
+
+		font-family: "JosefinSans-Regular";
+		font-size: 24px;
+		text-decoration: none;
+
+		position: relative;
 	}
 	.gl-line {
 		background: #33CCA0;
@@ -69,8 +90,63 @@
 		height: 5px;
 		margin: 25px;
 	}
+	.logo {
+		width: 30px;
+		height: auto;
+	}
+
+	.link:hover {
+		color: #fff;
+	}
+	.link:hover:after {
+	   width: 95%;
+	}
+	.link:after {
+	    content: '';
+	    background: #33CCA0;
+
+	    width: 0%;
+	    height: 33%;
+
+	    position: absolute;
+	    z-index: -2;
+	    top: 57%;
+	    left: 11px;
+
+	    transition: all ease-out 0.3s;
+	}
+/* CTA ------------------------------------------*/
+	.cta {
+		background: #33CCA0;
+
+		width: 4px;
+		height: 37.5px;
+
+		position: absolute;
+		
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		cursor: url(../img/cursor_link.png) 12 12, pointer;
+
+		transition: all 0.3s
+	}
+	.cta:hover{
+		background: #CDFFDB;
+		height: 66.6px;
+	}
+	.ctaT {
+		top: 0;
+	}
+	.ctaB {
+		bottom: 0;
+	}	
 
 /* FIXED ----------------------------------------*/
+	#fixed {
+		position: relative;
+		z-index: 666;
+	}
 	.decoTop {
 		width: 25px;
 		height: 25px;
@@ -105,7 +181,7 @@
 		bottom: 12px;
 		left: 12px;
 
-		cursor: url(../img/cursor_link.png) 12 12, auto;
+		cursor: url(../img/cursor_link.png) 12 12, pointer;
 	}
 	.square {
 		background: #33CCA0;
@@ -126,7 +202,28 @@
 		top: 12px;
 		right: 12px;
 
-		cursor: url(../img/cursor_link.png) 12 12, auto;
+		cursor: url(../img/cursor_link.png) 12 12, pointer;
+	}
+	.menu:after {
+		content: 'MENU';
+		font-family: "JosefinSans-Regular";
+		font-size: 19px;
+    	
+    	width: 0%;
+    	height: 0px;
+    	
+    	position: absolute;
+    	z-index: -1;
+    	top: 0;
+    	right: 50px;
+
+    	opacity: 0;
+
+    	transition: all ease-out 0.333s;
+	}
+	.menu:hover:after {
+		opacity: 1;
+      right: 95px;
 	}
 	.line {
 		background: #33CCA0;
@@ -144,6 +241,8 @@
 		right: -10px;
 	}
 
+
+
 /* HOME -----------------------------------------*/
 #home {
 	width: 100%;
@@ -154,6 +253,8 @@
 	justify-content: center;
 	align-items: center;
 
+	position: relative;
+
 }
 #home h2 {
 
@@ -162,44 +263,35 @@
 	
 }
 
+/* INFOS ----------------------------------------*/
+#infos {
+	height: 100vh;
+	padding: 25px;
 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-
-.appearText {
-	-webkit-animation: appearText 0.666s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: appearText 0.666s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	position: relative;
 }
-
-@-webkit-keyframes appearText {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+#infos p {
+	margin-bottom: 25px;
+	text-align: justify;
 }
-@keyframes appearText {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+.dev {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-
+.dev a {
+	margin: 6px;
+}
+/* KEYFRAMES-------------------------------------*/
 .appear {
 	-webkit-animation: appear 0.666s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
 	        animation: appear 0.666s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
 }
-
 @-webkit-keyframes appear {
   0% {
     -webkit-transform: scale(2);
@@ -233,4 +325,32 @@
   }
 }
 
+.appearText {
+	-webkit-animation: appearText 0.666s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: appearText 0.666s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes appearText {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appearText {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
