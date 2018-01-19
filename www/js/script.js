@@ -42,7 +42,9 @@
 		menuList = document.querySelector('.menuList');
 		menuList_link = document.querySelectorAll('.menuList-link');
 
+
 	menu.addEventListener('click', function() {
+		menu.classList.toggle('menu-cursor')
 		lineFirst.classList.toggle('lineFirst-anim');
 		lineCrossL.classList.toggle('lineCrossL-anim');
 		lineCrossR.classList.toggle('lineCrossR-anim');

@@ -284,6 +284,9 @@
 
 		cursor: url(../img/cursor_link.png) 12 12, pointer;
 	}
+	.menu-cursor {
+		cursor: url(../img/menu_cursor_link.png) 12 12, pointer;
+	}
 	.menu:after {
 		content: 'MENU';
 		font-family: "Josefin Sans";
@@ -364,10 +367,17 @@
 		opacity: 0;
 
 		transition: all ease-out 0.25s;
+
+		cursor: url(../img/menu_cursor.png) 2.5 2.5, auto;
 	}
 	.menuOverlay-anim {
 		visibility: visible;
 		opacity: 1;
+	}
+	.menuList {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.menuList-link {
 		color: #000;
@@ -376,7 +386,29 @@
 
 		font-size: 36px;
 		font-family: "JosefinSans-Bold";
-		text-align: center;
+
+		display: flex;
+
+		position: relative;
+
+		cursor: url(../img/menu_cursor_link.png) 12 12, pointer;
+	}
+	.menuList-link:after {
+		content: '';
+	   background: #fff;
+
+	   width: 0%;
+	   height: 40%;
+
+	   position: absolute;
+	   z-index: -2;
+	   top: 57%;
+	   left: 11px;
+
+	   transition: all ease-out 0.3s;
+	}
+	.menuList-link:hover:after {
+		width: 100%;
 	}
 
 /* HOME -----------------------------------------*/
