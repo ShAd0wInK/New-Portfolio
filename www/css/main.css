@@ -84,18 +84,6 @@
 		bottom: -17px;
 		right: -2px;
 	}
-/*	.mainTitle::after {
-		content: '';
-		background: #fff;
-
-		width: 135px;
-		height: 5px;
-
-		position: absolute;
-		z-index: -1;
-		bottom: -5px;
-		left: -5px;
-	}*/
 	.title {
 		font-size: 24px;
 		font-family: "JosefinSans-SemiBold", Arial;
@@ -199,7 +187,6 @@
 		top: 12px;
 		left: 12px;
 	}
-	
 	.decoBottom {
 		width: 25px;
 		height: 25px;
@@ -495,6 +482,10 @@
 footer .gl-line {
 	margin: 12px auto;
 }
+footer li {
+	margin: 25px;
+}
+
 
 
 
