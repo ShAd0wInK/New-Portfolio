@@ -355,7 +355,7 @@
 /* INFOS ----------------------------------------*/
 #infos {
 	height: 100vh;
-	padding: 25px;
+	padding: 0 25px;
 
 	display: flex;
 	flex-direction: column;
