@@ -104,18 +104,18 @@
 		margin: 5px;
 	}
 
-	.link:hover {
+	.link-anim:hover {
 		color: #fff;
 	}
-	.link:hover:after {
+	.link-anim:hover:after {
 	   width: 95%;
 	}
-	.link:after {
+	.link-anim:after {
 	    content: '';
 	    background: #33CCA0;
 
 	    width: 0%;
-	    height: 33%;
+	    height: 40%;
 
 	    position: absolute;
 	    z-index: -2;
