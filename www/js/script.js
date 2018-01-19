@@ -26,7 +26,7 @@
 		});
 	});
 	gotoPro.addEventListener('click', function() {
-		document.querySelector('#pro').scrollIntoView({
+		document.querySelector('#end').scrollIntoView({
 				behavior: 'smooth',
 		});
 	});

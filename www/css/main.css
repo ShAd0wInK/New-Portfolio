@@ -221,7 +221,7 @@
 
 		position: fixed;
 		z-index: 3; 
-		bottom: 12px;
+		bottom: 6px;
 		left: 12px;
 
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
