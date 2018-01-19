@@ -64,6 +64,8 @@
 
 		padding: 25px;
 
+		display: flex;
+
 		font-size: 36px;
 		font-family: "JosefinSans-SemiBold", Arial;
 		position: sticky;
@@ -121,16 +123,9 @@
 	.gl-line {
 		background: #33CCA0;
 
-		width: 185px;
+		width: 58%;
 		height: 5px;
 		margin: 25px auto;
-	}
-	.g-line {
-		background: #33CCA0;
-
-		width: 135px;
-		height: 5px;
-		margin: 15px;
 	}
 	.logo {
 		width: 30px;
@@ -458,7 +453,6 @@
 
 /* PROJECTS --------------------------------------*/
 #projects {
-	height: 200vh;
 }
 .article {
 	width: 100%;
@@ -480,6 +474,29 @@
 	background: url(../img/articles/izi.jpg) no-repeat;
 	background-size: 100%;
 }
+#ad {
+	background: url(../img/articles/ad.jpg) no-repeat;
+	background-size: 100%;
+}
+
+/* PROJECTS -------------------------------------*/
+#pro {
+	height: 103vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer {
+	margin: 35px 25px;
+	text-align: center;
+
+}
+footer .gl-line {
+	margin: 12px auto;
+}
+
+
 
 /* KEYFRAMES-------------------------------------*/
 .appear {

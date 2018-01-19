@@ -21,7 +21,7 @@
 		});
 	});
 	gotoProjects.addEventListener('click', function() {
-		document.querySelector('#projects').scrollIntoView({
+		document.querySelector('#projects_anchor').scrollIntoView({
 				behavior: 'smooth',
 		});
 	});
