@@ -85,6 +85,21 @@
 	});
 
 
+window.addEventListener("scroll", function() {
+	var sw = document.getElementById("sw");
+
+	var yPos = window.pageYOffset / sw.dataset.speed;
+	yPos = -yPos;
+	
+	var coords = '100% '+ yPos + 'px';
+	
+	sw.style.backgroundPosition = coords;
+	
+});
+
+
+
+
 
 
 		
