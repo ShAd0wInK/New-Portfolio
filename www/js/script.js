@@ -100,22 +100,40 @@ var sw = document.getElementById('sw');
 
 sw.addEventListener('click', function() {
 	sw_article.classList.toggle('sw-article-anim');
+	sw_article.scrollIntoView({
+				behavior: 'smooth',
+		});
 });
 
 ocs.addEventListener('click', function() {
 	ocs_article.classList.toggle('ocs-article-anim');
+	ocs_article.scrollIntoView({
+				behavior: 'smooth',
+		});
 });
 nsp.addEventListener('click', function() {
 	nsp_article.classList.toggle('nsp-article-anim');
+	nsp_article.scrollIntoView({
+				behavior: 'smooth',
+		});
 });
 rdc.addEventListener('click', function() {
 	rdc_article.classList.toggle('rdc-article-anim');
+	rdc_article.scrollIntoView({
+				behavior: 'smooth',
+		});
 });
 izi.addEventListener('click', function() {
 	izi_article.classList.toggle('izi-article-anim');
+	izi_article.scrollIntoView({
+				behavior: 'smooth',
+		});
 });
 ad.addEventListener('click', function() {
 	ad_article.classList.toggle('ad-article-anim');
+	ad_article.scrollIntoView({
+				behavior: 'smooth',
+		});
 });
 
 
