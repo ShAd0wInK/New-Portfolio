@@ -1,0 +1,42 @@
+var articles = [
+	{
+		title : 'ShadoWord',
+		period: '2016',
+		duration: '3 mois',
+		context: 'Premier site Web',
+		contributors: 'Ø',
+		description: 'Expérimentation de l\'HTML / CSS grâce aux cours d\'Openclassroom. J\'étais encore au lycée. L\'idée y était, mais pas le design 🙃.',
+	},
+	{
+		title: 'OldCarShow',
+		period: 'Novembre 2017',
+		duration: 'Une semaine',
+		context: 'Semaine intensive d\'intégration',
+		contributors: 'Quentin RAIMBAULT, Thomas DOROTHÉE, Simon SOLEAU et Nicolas STENGER',
+		description: 'Basée sur l\'HTML / CSS, nous devions créer un site avec comme thème "Urbain & Classe". Notre choix s\'est penché sur de un site de salons d\'ancienne voitures de collection.',
+	},
+	{
+		title: 'Nespresso',
+		period: 'Décembre 2017',
+		duration: 'Une semaine',
+		context: 'Redesign de la page d\'accueil de Nespresso',
+		contributors: 'Ø',
+		description: 'Le but était de la rendre plus moderne, luxueuse et attirante',
+	},
+	{
+		title: 'IZIMOVIE',
+		period: 'Décembre 2017',
+		duration: 'Une semaine',
+		context: 'Semaine intensive de JavaScript',
+		contributors: 'Théodore YIP, Clément SABOURIN et Wail SAÏDINI',
+		description: 'Nous devions créer un Netflix-like pour films de fans, avec comme éléments obligatoire un player et un tri des films par catégories.',
+	},
+	{
+		title: 'Ancien Portfolio',
+		period: 'Décembre 2017 - Janvier 2018',
+		duration: 'Un mois & demi',
+		context: 'Faire son portfolio',
+		contributors: 'Ø',
+		description: 'Première idée de portfolio, design aproximmatif. Dès qu\'il fut terminé, je me suis mis à faifre celui sur lequel bous êtres actuellement',
+	},
+]
