@@ -466,7 +466,7 @@
 .articles {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: stretch;
+	justify-content: center;
 }
 .article {
 	width: 100%;
