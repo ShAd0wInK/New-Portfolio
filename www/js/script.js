@@ -171,7 +171,7 @@ window.onload = function () {
         	body.classList.remove('body-hidden');
       loader.style.visibility = 'hidden';
       loader.style.opacity = '0';
-    }, 2500);
+    }, 1200);
 }
 
 

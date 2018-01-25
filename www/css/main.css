@@ -69,15 +69,15 @@
 	}
 	.mainTitle {
 		color: #fff;
+		background: #000;
 
-		padding: 25px;
+		padding: 25px 25px 5px;
 
-		display: inline-flex;
+		display: flex;
 
 		font-size: 36px;
 		font-family: "JosefinSans-SemiBold", Arial;
 		position: sticky;
-		-webkit-position: sticky;
 		z-index: 2;
 		top: -15px;
 	}
@@ -237,12 +237,12 @@
 		content: 'TOP';
 		color: #fff;
 		font-family: "Josefin Sans";
-		font-size: 12px;
+		font-size: 16px;
     	
     	display: flex;
     	position: absolute;
     	z-index: -1;
-    	bottom: 8px;
+    	bottom: 4px;
     	left: 0;
 
     	opacity: 0;
@@ -294,7 +294,7 @@
 	.menu:after {
 		content: 'MENU';
 		font-family: "Josefin Sans";
-		font-size: 12px;
+		font-size: 16px;
     	
     	width: 0%;
     	height: 0px;
@@ -302,7 +302,7 @@
     	position: absolute;
     	z-index: -1;
     	top: 0;
-    	right: 40px !important;
+    	right: 35px !important;
 
     	opacity: 0;
 
@@ -310,7 +310,7 @@
 	}
 	.menu:hover:after {
 		opacity: 1;
-      right: 95px;
+      right: 80px !important;
 	}
 	.line {
 		background: #33CCA0;
@@ -383,6 +383,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 	}
 	.menuList-link {
 		color: #000;
@@ -450,10 +451,9 @@
 	}
 	#infos p {
 		margin-bottom: 25px;
-		text-align: justify;
+		text-align: center;
 	}
 	.dev {
-		margin-top: 25px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -493,7 +493,8 @@
 }
 .article-title {
 	font-size: 20px;
-	font-family: "Josefin Sans"
+	font-family: "Josefin Sans";
+	text-transform: uppercase;
 }
 .article span  {
 	color: #33CCA0;
@@ -625,6 +626,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+#pro .text {
+	text-align: center;
 }
 .footer {
 	margin: 35px 25px;
@@ -929,5 +933,19 @@ footer .square {
 	  	}
 	}
 
+
+	::-webkit-scrollbar {
+	   	width: 10px;
+	}
+	::-webkit-scrollbar-track {
+	   	background: #000; 
+	}
+	::-webkit-scrollbar-thumb {
+	   	background: #33CCA0; 
+	   	transition: all 0.3s;
+	}
+	::-webkit-scrollbar-thumb:hover {
+	   	background: #CDFFDB; 
+	}
 
 
