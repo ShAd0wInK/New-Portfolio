@@ -163,6 +163,22 @@ ad.addEventListener('click', function() {
 		});
 });
 
+// var articles = document.querySelectorAll('.article-fullscreen');
+// console.log(articles);
+//  	articleContent = document.querySelectorAll('.article-content');
+// for (var i = 0; i < articles.length; i++) {
+// 	articles[i].addEventListener('click', function() {
+// 		console.log(this);
+// 		var article_id = this.getAttribute('id');
+// 		var article_content = '.' + article_id + '-article';
+// 		console.log(article_id);
+// 		console.log(article_content);
+// 		this.parentElement.querySelector(article_content)
+		
+// 	});
+// };
+
+
 window.onload = function () {
 
     setTimeout(function(){

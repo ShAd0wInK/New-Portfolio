@@ -78,6 +78,7 @@
 		font-size: 36px;
 		font-family: "JosefinSans-SemiBold", Arial;
 		position: sticky;
+		-webkit-position: sticky;
 		z-index: 2;
 		top: -15px;
 	}
@@ -599,6 +600,11 @@
 
 }
 .ad-article-anim {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+}
+.is-active {
 	height: auto;
 	visibility: visible;
 	opacity: 1;
