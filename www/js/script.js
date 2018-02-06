@@ -187,7 +187,7 @@ window.onload = function () {
         	body.classList.remove('body-hidden');
       loader.style.visibility = 'hidden';
       loader.style.opacity = '0';
-    }, 1200);
+    }, 1000);
 }
 
 
