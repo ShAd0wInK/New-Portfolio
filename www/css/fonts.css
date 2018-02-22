@@ -1,0 +1,18 @@
+/* Using Josefin Sans, a cool font :) */
+
+@font-face {
+	font-family: "Josefin Sans";
+    src: url('../fonts/JosefinSans-Regular.ttf');
+}
+@font-face {
+	font-family: "JosefinSans-Bold";
+	src: url('../fonts/JosefinSans-Bold.ttf');
+}
+@font-face {
+	font-family: "JosefinSans-SemiBold";
+	src: url('../fonts/JosefinSans-SemiBold.ttf');
+}
+@font-face {
+	font-family: "JosefinSans-Light";
+	src: url('../fonts/JosefinSans-Light.ttf');
+}
