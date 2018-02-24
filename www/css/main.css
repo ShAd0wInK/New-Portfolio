@@ -552,18 +552,18 @@
 		opacity: 0;
 		transition: all 0.25s;
 	}
-	#sw:after, #ocs:after, #nsp:after, #rdc:after, #izi:after, #ad:after {
+	.article-fullscreen:after {
 	    color: #33CCA0;
 	    font-size: 36px;
 	    font-family: "JosefinSans-SemiBold";
 	    position: absolute;
-	    top: 155px;
+	    top: 27vh;
 	    left: 12.5px;
 	    opacity: 0;
 	    visibility: hidden;
 	    transition: all 0.25s;
 	}
-	#sw:hover::after, #ocs:hover::after, #nsp:hover::after, #rdc:hover::after, #izi:hover::after, #ad:hover::after {
+	.article-fullscreen:hover::after {
 		opacity: 1;
 		visibility: visible;
 	}
@@ -604,6 +604,13 @@
 		content: 'Ancien Portfolio';
 
 	}
+	#mf {
+		background: url(../img/articles/mf.jpg) no-repeat;
+	}
+	#mf:after {
+		content: 'Multiforme';
+
+	}
 	.is-active {
 		height: auto;
 		visibility: visible;
@@ -614,11 +621,7 @@
 			width: 41%;
 			
 			margin: 0 25px;
-		}
-		#sw:after, #ocs:after, #nsp:after, #rdc:after, #izi:after, #ad:after {
-		 
-	    top: 195px;
-	}	
+		}	
 	}
 	@media (min-width: 914px) {
 		.article {
