@@ -59,15 +59,7 @@
 			squares[i].classList.toggle('square-anim');
 		};
 		btt.classList.toggle('btt-anim');
-		for (var i = 0; i < menuList_link.length; i++) {
-			menuList_link[i].classList.toggle('appearText');
-		};
-		for (var i = 0; i < appearText.length; i++) {
-			appearText[i].classList.toggle('appearText');
-		};
-		for (var i = 0; i < appear.length; i++) {
-			appear[i].classList.toggle('appear');
-		};
+		
 
 	});
 	window.addEventListener('keydown', function(event) {
@@ -82,12 +74,7 @@
 					squares[i].classList.remove('square-anim');
 				};
 				btt.classList.remove('btt-anim');
-				for (var i = 0; i < appearText.length; i++) {
-					appearText[i].classList.toggle('appearText');
-				};
-				for (var i = 0; i < appear.length; i++) {
-					appear[i].classList.toggle('appear');
-				};
+				
 	      	};
 	  	});
 	menuList.addEventListener('click', function() {
@@ -101,12 +88,7 @@
 			squares[i].classList.toggle('square-anim');
 		};
 		btt.classList.toggle('btt-anim');
-		for (var i = 0; i < appearText.length; i++) {
-			appearText[i].classList.toggle('appearText');
-		};
-		for (var i = 0; i < appear.length; i++) {
-			appear[i].classList.toggle('appear');
-		};
+		
 	});
 
 // PROJECTS DISPLAY

@@ -51,7 +51,7 @@
 	}
 	.mainTitle {
 		color: #fff;
-
+		background: #000;
 		padding: 25px 25px 5px;
 
 		display: flex;
@@ -306,9 +306,16 @@
 
     	transition: all ease-out 0.25s;
 	}
+	
 	.menu:hover:after {
 		opacity: 1;
       right: 80px !important;
+	}
+	@media (min-width: 480px) {
+		.menu:hover:after {
+			content: 'PRO';
+			right: 65px !important;
+		}
 	}
 	.line {
 		background: #33CCA0;
@@ -373,6 +380,18 @@
 
 		cursor: url(../img/cursor/menu_cursor.png) 2.5 2.5, auto;
 	}
+
+	@media (min-width: 480px) {
+		
+		.menuOverlay .menuList {
+			display: none;
+		}
+		.menuOverlay .pro {
+			display: flex;
+			justify-content: space-between;
+			align-items: space-between;
+		}
+	}
 	.menuOverlay-anim {
 		visibility: visible;
 		opacity: 1;
@@ -382,6 +401,34 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+	}
+	.menuList2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		top: 30vh;
+	}
+	.menuList2 .text {
+		color: #000;
+		    font-size: 36px;
+		    font-family: "JosefinSans-Bold"
+	}
+	.menuList2 .link {
+		color: #000;
+		font-size: 36px;
+		    font-family: "JosefinSans-Bold"
+	}
+	.menuList2 .link-anim {
+		transition: all ease-out 0.3s;
+	}
+	
+	@media (min-width: 480px) {
+		
+	 .footer .text {
+		color: #000;
+	}
 	}
 	.menuList-link {
 		color: #000;
@@ -632,7 +679,7 @@
 	}
 
 /* PRO ------------------------------------------*/
-	#pro {
+	.pro {
 
 		height: 103vh;
 
@@ -640,18 +687,15 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
-	@media (min-width: 785px) {
-		/*#pro {
-			background: url(../img/gotohetic.jpg) no-repeat center;
-			background-size: cover;
-		}*/
+	@media (min-width: 480px) {
+		.pro {
+			display: none;
+		}
 	}
-	#pro .text {
+	.pro .text {
 		text-align: center;
 	}
-	#projects h3 {
-		background: #000;
-	}
+
 	.footer {
 		margin: 35px 25px;
 		text-align: center;
