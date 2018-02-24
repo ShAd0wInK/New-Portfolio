@@ -28,7 +28,6 @@
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
-
 /* GLOBAL ---------------------------------------*/
 	body {
 		background: #000;
@@ -52,7 +51,6 @@
 	}
 	.mainTitle {
 		color: #fff;
-		background: #000;
 
 		padding: 25px 25px 5px;
 
@@ -122,9 +120,7 @@
 	.link-anim:hover {
 		color: #fff;
 	}
-	.link-anim:hover:after {
-	   width: 100%;
-	}
+	
 	.link-anim:after {
 	    content: '';
 	    background: #33CCA0;
@@ -139,6 +135,25 @@
 
 	    transition: all ease-out 0.3s;
 	}
+	.link-anim:hover::after {
+	   width: 100%;
+	}
+
+/* SCROLLBAR ------------------------------------*/
+	::-webkit-scrollbar {
+	   	width: 10px;
+	}
+	::-webkit-scrollbar-track {
+	   	background: #1F1F1F; 
+	}
+	::-webkit-scrollbar-thumb {
+	   	background: #33CCA0; 
+	   	transition: all 0.3s;
+	}
+	::-webkit-scrollbar-thumb:hover {
+	   	background: #CDFFDB; 
+	}
+
 /* CTA ------------------------------------------*/
 	.cta {
 		background: #33CCA0;
@@ -167,7 +182,6 @@
 
 	}	
 	
-
 /* FIXED ----------------------------------------*/
 	#fixed {
 		position: relative;
@@ -423,6 +437,7 @@
 
 /* INFOS ----------------------------------------*/
 	#infos {
+
 		height: 100vh;
 		padding: 0 45px;
 
@@ -432,6 +447,12 @@
 		align-items: center;
 
 		position: relative;
+	}
+	@media (min-width: 785px) {
+		#infos {
+			background: url(../img/profil.jpg) no-repeat center;
+			background-size: cover;
+		}
 	}
 	#infos p {
 		margin-bottom: 25px;
@@ -452,330 +473,210 @@
 		}
 	}
 
-/* PROJECTS --------------------------------------*/
-#projects {
-	color: #fff;
-}
-.articles {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.article {
-	width: 100%;
-	position: relative;
-	z-index: 0;
-	margin: 0 27px;
-	/*margin: 25px 25px 55px !important;*/
-}
-.article li {
-	margin-bottom: 12.5px;
-}
-.article-fullscreen {
-	background-size: 100% !important;
-	height: 33vh;
-	border: 1px #fff solid;
-	margin-bottom: 25px;
-	cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
-
-}
-.article-mainTitle {
-	font-size: 24px;
-	font-family: "JosefinSans-SemiBold";
-	margin-bottom: 25px !important;
-}
-.article-title {
-	font-size: 20px;
-	font-family: "Josefin Sans";
-	text-transform: uppercase;
-}
-.article span  {
-	color: #33CCA0;
-}
-.article-link {
-	color: #CDFFDB;
-
-	font-family: "Josefin Sans";
-	font-size: 20px;
-	text-decoration: none;
-
-	position: relative;
-}
-#sw {
-	background: url(../img/articles/sw.jpg) no-repeat;
-	
-}
-
-#sw:after {
-	    content: 'Shadoworld';
-    color: #33CCA0;
-    font-size: 36px;
-    font-family: "JosefinSans-SemiBold";
-    position: absolute;
-    top: 181px;
-    left: 12.5px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.25s;
-}
-#sw:hover::after {
-	opacity: 1;
-	visibility: visible;
-}
-.article-fullscreen:before {
-	content:'';
-	width: 99.5%;
-	
-	height: 33vh;
-	background: rgba(0,0,0,0.75);
-	position: absolute;
-	top: 1;
-	left: 1;
-	display: flex;
-	align-items: flex-end;
-	padding: 0;
-	justify-content: flex-start;
-	opacity: 0;
-	visibility: hidden;
-
-	transition: all 0.25s;
-}
-.article-fullscreen:hover::before {
-	opacity: 1;
-	visibility: visible;
-}
-
-.sw-article {
-	height: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.25s;
-
-
-}
-.sw-article-anim {
-	height: auto;
-	visibility: visible;
-	opacity: 1;
-}
- 
-#ocs {
-	background: url(../img/articles/ocs.jpg) no-repeat;
-}
-#ocs:after {
-	    content: 'OldCarShow';
-    color: #33CCA0;
-    font-size: 36px;
-    font-family: "JosefinSans-SemiBold";
-    position: absolute;
-    top: 181px;
-    left: 12.5px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.25s;
-}
-#ocs:hover::after {
-	opacity: 1;
-	visibility: visible;
-}
-.ocs-article {
-	height: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.25s;
-
-
-}
-.ocs-article-anim {
-	height: auto;
-	visibility: visible;
-	opacity: 1;
-}
-#nsp {
-	background: url(../img/articles/nsp.jpg) no-repeat;
-}
-#nsp:after {
-	    content: 'Nespresso';
-    color: #33CCA0;
-    font-size: 36px;
-    font-family: "JosefinSans-SemiBold";
-    position: absolute;
-    top: 181px;
-    left: 12.5px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.25s;
-}
-#nsp:hover::after {
-	opacity: 1;
-	visibility: visible;
-}
-.nsp-article {
-	height: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.25s;
-
-}
-.nsp-article-anim {
-	height: auto;
-	visibility: visible;
-	opacity: 1;
-}
-#rdc {
-	background: url(../img/articles/rdc.jpg) no-repeat;
-}
-#rdc:after {
-	    content: 'Resto du Coeur';
-    color: #33CCA0;
-    font-size: 36px;
-    font-family: "JosefinSans-SemiBold";
-    position: absolute;
-    top: 181px;
-    left: 12.5px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.25s;
-}
-#rdc:hover::after {
-	opacity: 1;
-	visibility: visible;
-}
-.rdc-article {
-	height: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.25s;
-
-}
-.rdc-article-anim {
-	height: auto;
-	visibility: visible;
-	opacity: 1;
-}
-#izi {
-	background: url(../img/articles/izi.jpg) no-repeat;
-}
-#izi:after {
-	    content: 'IZIMOVIE';
-    color: #33CCA0;
-    font-size: 36px;
-    font-family: "JosefinSans-SemiBold";
-    position: absolute;
-    top: 181px;
-    left: 12.5px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.25s;
-}
-#izi:hover::after {
-	opacity: 1;
-	visibility: visible;
-}
-.izi-article {
-	height: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.25s;
-
-}
-.izi-article-anim {
-	height: auto;
-	visibility: visible;
-	opacity: 1;
-}
-#ad {
-	background: url(../img/articles/ad.jpg) no-repeat;
-	
-}
-#ad:after {
-	    content: 'Ancien Portfolio';
-    color: #33CCA0;
-    font-size: 36px;
-    font-family: "JosefinSans-SemiBold";
-    position: absolute;
-    top: 181px;
-    left: 12.5px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.25s;
-}
-#ad:hover::after {
-	opacity: 1;
-	visibility: visible;
-}
-.ad-article {
-	height: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.25s;
-
-}
-.ad-article-anim {
-	height: auto;
-	visibility: visible;
-	opacity: 1;
-}
-.is-active {
-	height: auto;
-	visibility: visible;
-	opacity: 1;
-}
-@media (min-width: 615px) {
-	.article {
-		width: 41%;
-		
-		margin: 0 25px;
-	}	
-}
-@media (min-width: 914px) {
-	.article {
-		width: 27%;
-		
-		margin: 0 25px;
-	}	
-}
-
-
 /* PROJECTS -------------------------------------*/
-#pro {
-	height: 103vh;
+	#projects {
+		color: #fff;
+	}
+	#projects h3 {
+		background: #000;
+	}
+	.articles {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.article {
+		width: 100%;
+		position: relative;
+		z-index: 0;
+		margin: 0 27px;
+	}
+	.article li {
+		margin-bottom: 12.5px;
+	}
+	
+	.article-mainTitle {
+		font-size: 24px;
+		font-family: "JosefinSans-SemiBold";
+		margin-bottom: 25px !important;
+	}
+	.article-title {
+		font-size: 20px;
+		font-family: "Josefin Sans";
+		text-transform: uppercase;
+	}
+	.article span  {
+		color: #33CCA0;
+	}
+	.article-link {
+		color: #CDFFDB;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-#pro .text {
-	text-align: center;
-}
-.footer {
-	margin: 35px 25px;
-	text-align: center;
-	position: relative;
+		font-family: "Josefin Sans";
+		font-size: 20px;
+		text-decoration: none;
 
-}
-footer .gl-line {
-	margin: 12px auto;
-}
-.menuList .square {
-	margin: 7.5px 0 25px;
-}
-footer .square {
-	position: absolute;
-    right: 2px;
-    bottom: -13px;
-}
-.oups {
+		position: relative;
+	}
+	.article-fullscreen {
+		background-size: 100% !important;
+		height: 33vh;
+		border: 1px #fff solid;
+		margin-bottom: 25px;
+		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
+	}
+	.article-fullscreen:before {
+		content:'';
+		width: 99.5%;
+		
+		height: 33vh;
+		background: rgba(0,0,0,0.75);
+		position: absolute;
+		top: 1;
+		left: 1;
+		display: flex;
+		align-items: flex-end;
+		padding: 0;
+		justify-content: flex-start;
+		opacity: 0;
+		visibility: hidden;
 
-}
-@media (min-width: 480px) {
+		transition: all 0.25s;
+	}
+	.article-fullscreen:hover::before {
+		opacity: 1;
+		visibility: visible;
+	}
+	.article-content {
+		height: 0;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.25s;
+	}
+	#sw:after, #ocs:after, #nsp:after, #rdc:after, #izi:after, #ad:after {
+	    color: #33CCA0;
+	    font-size: 36px;
+	    font-family: "JosefinSans-SemiBold";
+	    position: absolute;
+	    top: 155px;
+	    left: 12.5px;
+	    opacity: 0;
+	    visibility: hidden;
+	    transition: all 0.25s;
+	}
+	#sw:hover::after, #ocs:hover::after, #nsp:hover::after, #rdc:hover::after, #izi:hover::after, #ad:hover::after {
+		opacity: 1;
+		visibility: visible;
+	}
+	#sw {
+		background: url(../img/articles/sw.jpg) no-repeat;	
+	}
+	#sw:after {
+		 content: 'Shadoworld';
+	} 
+	#ocs {
+		background: url(../img/articles/ocs.jpg) no-repeat;
+	}
+	#ocs:after {
+		content: 'OldCarShow';
+	}
+	#nsp {
+		background: url(../img/articles/nsp.jpg) no-repeat;
+	}
+	#nsp:after {
+		content: 'Nespresso';
+	}
+	#rdc {
+		background: url(../img/articles/rdc.jpg) no-repeat;
+	}
+	#rdc:after {
+		content: 'Resto du Coeur';
+	}
+	#izi {
+		background: url(../img/articles/izi.jpg) no-repeat;
+	}
+	#izi:after {
+		content: 'IZIMOVIE';
+	}
+	#ad {
+		background: url(../img/articles/ad.jpg) no-repeat;
+	}
+	#ad:after {
+		content: 'Ancien Portfolio';
+
+	}
+	.is-active {
+		height: auto;
+		visibility: visible;
+		opacity: 1;
+	}
+	@media (min-width: 615px) {
+		.article {
+			width: 41%;
+			
+			margin: 0 25px;
+		}
+		#sw:after, #ocs:after, #nsp:after, #rdc:after, #izi:after, #ad:after {
+		 
+	    top: 195px;
+	}	
+	}
+	@media (min-width: 914px) {
+		.article {
+			width: 27%;
+			
+			margin: 0 25px;
+		}	
+	}
+
+/* PRO ------------------------------------------*/
+	#pro {
+
+		height: 103vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	@media (min-width: 785px) {
+		#pro {
+			background: url(../img/gotohetic.jpg) no-repeat center;
+			background-size: cover;
+		}
+	}
+	#pro .text {
+		text-align: center;
+	}
+	#projects h3 {
+		background: #000;
+	}
+	.footer {
+		margin: 35px 25px;
+		text-align: center;
+		position: relative;
+
+	}
+	footer .gl-line {
+		margin: 12px auto;
+	}
+	.menuList .square {
+		margin: 7.5px 0 25px;
+	}
+	footer .square {
+		position: absolute;
+	    right: 2px;
+	    bottom: -13px;
+	}
 	.oups {
-		top: -16px;
+
 	}
-	.oups:before {
-		/*bottom: -16px;*/
+	@media (min-width: 480px) {
+		.oups {
+			top: -15px;
+		}
+		.oups:before {
+			/*bottom: -16px;*/
+		}
 	}
-}
 
 /* LOADER ---------------------------------------*/
 	.loader {
@@ -810,8 +711,6 @@ footer .square {
 	    	stroke-dashoffset: -1000;
 	  	}
 	}
-
-
 
 /* KEYFRAMES-------------------------------------*/
 	.appear {
@@ -946,18 +845,6 @@ footer .square {
 	}
 
 
-	::-webkit-scrollbar {
-	   	width: 10px;
-	}
-	::-webkit-scrollbar-track {
-	   	background: #000; 
-	}
-	::-webkit-scrollbar-thumb {
-	   	background: #33CCA0; 
-	   	transition: all 0.3s;
-	}
-	::-webkit-scrollbar-thumb:hover {
-	   	background: #CDFFDB; 
-	}
+	
 
 

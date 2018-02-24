@@ -6,8 +6,6 @@
 		gotoProjects = document.querySelector('.gotoProjects');
 		gotoPro = document.querySelector('.gotoPro');
 
-	
-
 	for (var i = 0; i < gtt.length; i++) {
 		gtt[i].addEventListener('click', function() {
 			document.querySelector('#home').scrollIntoView({
@@ -111,39 +109,37 @@
 		};
 	});
 
+// PROJECTS DISPLAY
+	var articleFullscreen = document.querySelectorAll('.article-fullscreen');
+		 articleContent = document.querySelectorAll('.article-content');
 
-var articleFullscreen = document.querySelectorAll('.article-fullscreen');
-	articleContent = document.querySelectorAll('.article-content');
-
-for (let j = 0; j < articleFullscreen.length; j++) {
-	articleFullscreen[j].addEventListener('click', function() {
-   	for (var i = 0; i < articleFullscreen.length; i++) {
-      	articleContent[i].classList.add('is-active');
-         if (i !== j) {
-        		articleContent[i].classList.toggle('is-active');
-         };
-   	};
-      articleContent[j].scrollIntoView( {
-			behavior: 'smooth',
+	for (let j = 0; j < articleFullscreen.length; j++) {
+		articleFullscreen[j].addEventListener('click', function() {
+	   	for (var i = 0; i < articleFullscreen.length; i++) {
+	      	articleContent[i].classList.add('is-active');
+	         if (i !== j) {
+	        		articleContent[i].classList.toggle('is-active');
+	         };
+	   	};
+	      articleFullscreen[j].scrollIntoView( {
+				behavior: 'smooth',
+			});
 		});
-	});
-};
+	};
 
+// FAKE LOADER
+	window.onload = function () {
+		setTimeout(function(){
+		   var loader = document.querySelector('.loader');
+		   	 body = document.querySelector('.body');
+		   body.classList.remove('body-hidden');
+		   loader.style.visibility = 'hidden';
+		   loader.style.opacity = '0';
+	   }, 1000);
+	}
 
-
-window.onload = function () {
-	setTimeout(function(){
-	   var loader = document.querySelector('.loader');
-	   	 body = document.querySelector('.body');
-	   
-	   body.classList.remove('body-hidden');
-	   loader.style.visibility = 'hidden';
-	   loader.style.opacity = '0';
-   }, 1000);
-}
-
-
-var cta = document.querySelector('.cta');
+// CTA
+	var cta = document.querySelector('.cta');
 	
 	cta.addEventListener('click', function() {
 		cta.style.visibility = 'hidden';
@@ -154,8 +150,14 @@ var cta = document.querySelector('.cta');
 		});
 	});
 
-
-
+// PARALLAX ON INFOS
+	// window.addEventListener("scroll", function() {
+	// 	var slider = document.getElementById("infos");
+	// 	var yPos = window.pageYOffset / slider.dataset.speed;
+	// 	yPos = -yPos;
+	// 	var coords = '0% '+ yPos + 'px';
+	// 	slider.style.backgroundPosition = coords;	
+	// });
 
 
 
