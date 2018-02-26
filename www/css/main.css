@@ -279,7 +279,8 @@
 		display: none;
 		flex-direction: column;
 		z-index: -1;
-		bottom : 100px;
+		top: 50%;
+	transform: translate(-50%, 0);
 		right: 12px;
 	}
 	@media (min-width: 615px) {
@@ -334,6 +335,13 @@
 	.miniMenu .gotoProjects:hover:after {
 		opacity: 1;
       right: 85px !important;
+	}
+	.miniMenu .text {
+		position: absolute;
+		bottom: 92px;
+		right: -17px;
+		transform: rotate(90deg);
+		font-size: 16px;
 	}
 
 /* MENU -----------------------------------------*/
@@ -584,21 +592,33 @@
 }
 .what {
 	position: absolute;
-	bottom: 120px;
+	top: 46.5%;
+	transform: translate(-50%, 0);
 	right: 35px;
 	width: 75px;
 	height: auto;
-	transform: rotate(45deg);
+	;
 	visibility: hidden;
 	opacity: 0;
 
 	transition: all 0.25s;
+	animation: popup infinite 3.33s;
 
 }
 @media (min-width: 615px) {
 	.what {
 		visibility: visible;
 		opacity: 1;
+	}
+}
+@keyframes popup {
+	0%, 100% {
+		transform: translate(0, 0);
+
+	}
+	50% {
+		transform: translate(0, 48px);
+
 	}
 }
 /* INFOS ----------------------------------------*/
@@ -797,7 +817,7 @@
 /* PRO ------------------------------------------*/
 	.pro {
 
-		height: 103vh;
+		height: 90vh;
 
 		display: flex;
 		flex-direction: column;
