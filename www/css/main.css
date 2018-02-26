@@ -228,8 +228,8 @@
 	.btt {
 		color: #33CCA0;
 
-		font-size: 45px;
-		font-family: Arial;
+		font-size: 42px;
+		font-family: Helvetica;
 
 		position: fixed;
 		z-index: 3; 
@@ -256,7 +256,7 @@
 	}
 	.btt:hover:after {
 		opacity: 1;
-      left: 35px;
+      left: 25px;
 	}
 	.btt-anim {
 		color: #000;
