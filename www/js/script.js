@@ -118,15 +118,15 @@
 	};
 
 // FAKE LOADER
-	window.onload = function () {
-		setTimeout(function(){
-		   var loader = document.querySelector('.loader');
-		   	 body = document.querySelector('.body');
-		   body.classList.remove('body-hidden');
-		   loader.style.visibility = 'hidden';
-		   loader.style.opacity = '0';
-	   }, 1000);
-	}
+	// window.onload = function () {
+	// 	setTimeout(function(){
+	// 	   var loader = document.querySelector('.loader');
+	// 	   	 body = document.querySelector('.body');
+	// 	   body.classList.remove('body-hidden');
+	// 	   loader.style.visibility = 'hidden';
+	// 	   loader.style.opacity = '0';
+	//    }, 1000);
+	// }
 
 // CTA
 	var cta = document.querySelector('.cta');

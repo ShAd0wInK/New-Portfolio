@@ -600,13 +600,13 @@
 			fill: none;
 			stroke: #33CCA0;
 			stroke-width: 4;
-			stroke-dashoffset: 1000;
-			stroke-dasharray: 1000;
-		 	animation: complete 10s infinite linear;
+			stroke-dashoffset: 800;
+			stroke-dasharray: 800;
+		 	animation: complete 8s infinite linear;
 		}
 		@keyframes complete {
 		  	to {
-		    	stroke-dashoffset: -1000;
+		    	stroke-dashoffset: -800;
 		  	}
 		}
 		.cadrePoly {
