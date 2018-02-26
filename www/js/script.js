@@ -24,7 +24,7 @@
 		});
 	});
 	gotoProjects.addEventListener('click', function() {
-		document.querySelector('#ad').scrollIntoView({
+		document.querySelector('#mf').scrollIntoView({
 				behavior: 'smooth',
 		});
 	});
