@@ -167,7 +167,12 @@
 		transition: all 0.25s;
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 
-		
+	
+	}
+	@media (min-width: 615px) {
+		.cta {
+			display: none;
+		}
 	}
 	.cta:hover {
 		background: #CDFFDB;
@@ -266,6 +271,67 @@
 	}
 	.square-anim {
 		background: #000;
+	}
+	.miniMenu {
+		position: fixed;
+		display: none;
+		flex-direction: column;
+		z-index: -1;
+		bottom : 100px;
+		right: 12px;
+	}
+	@media (min-width: 615px) {
+		.miniMenu {
+			display: flex;
+
+		}
+	}
+	.miniMenu .square {
+		margin-bottom: 12.5px;
+		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
+	}
+	.miniMenu .square:after {
+		
+		font-family: "Josefin Sans";
+		font-size: 16px;
+    	
+    	width: 0%;
+    	height: 0px;
+    	
+    	position: absolute;
+    	z-index: -1;
+    	top: 0;
+    	right: 50px !important;
+
+    	opacity: 0;
+
+    	transition: all ease-out 0.25s;
+	}
+	.miniMenu .gotoHome:after {
+		content: 'ACCUEIL';
+	}
+	
+	.miniMenu .gotoHome:hover:after {
+		opacity: 1;
+      right: 87px !important;
+	}
+	.miniMenu .gotoInfos:after {
+		content: 'INFOS';
+		top: 20px;
+	}
+	
+	.miniMenu .gotoInfos:hover:after {
+		opacity: 1;
+      right: 67px !important;
+	}
+	.miniMenu .gotoProjects:after {
+		content: 'PROJETS';
+		top: 42px;
+	}
+	
+	.miniMenu .gotoProjects:hover:after {
+		opacity: 1;
+      right: 85px !important;
 	}
 
 /* MENU -----------------------------------------*/
@@ -380,7 +446,9 @@
 
 		cursor: url(../img/cursor/menu_cursor.png) 2.5 2.5, auto;
 	}
-
+	.menuOverlay .pro {
+		display: none;
+	}
 	@media (min-width: 480px) {
 		
 		.menuOverlay .menuList {
@@ -388,8 +456,6 @@
 		}
 		.menuOverlay .pro {
 			display: flex;
-			justify-content: space-between;
-			align-items: space-between;
 		}
 	}
 	.menuOverlay-anim {
@@ -408,10 +474,8 @@
 		align-items: center;
 		justify-content: center;
 		position: relative;
-		top: 30vh;
 	}
 	.menuList2 .text {
-		color: #000;
 		    font-size: 36px;
 		    font-family: "JosefinSans-Bold"
 	}
@@ -423,12 +487,27 @@
 	.menuList2 .link-anim {
 		transition: all ease-out 0.3s;
 	}
+	.menuList .link-anim:after {
+	    content: '';
+	    background: #fff;
+
+	    width: 0%;
+	    height: 40%;
+
+	    position: absolute;
+	    z-index: -2;
+	    top: 57%;
+	    left: 11px;
+
+	    transition: all ease-out 0.3s;
+	}
+	.menuList .link-anim:hover::after {
+	   width: 100%;
+	}
 	
 	@media (min-width: 480px) {
 		
-	 .footer .text {
-		color: #000;
-	}
+	
 	}
 	.menuList-link {
 		color: #000;
@@ -481,7 +560,45 @@
 		letter-spacing: 0.12em;
 		
 	}
+	.homeSvg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.homeSvg path{
+		fill: transparent;
+		stroke: #33CCA0;
+		stroke-width: 4px;
+		stroke-dasharray: 1000;
+	  	stroke-dashoffset: 1000;
+	 	animation: dash 8s infinite linear;
+	}
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+.what {
+	position: absolute;
+	bottom: 120px;
+	right: 35px;
+	width: 75px;
+	height: auto;
+	transform: rotate(45deg);
+	visibility: hidden;
+	opacity: 0;
+
+	transition: all 0.25s;
+
+}
+@media (min-width: 615px) {
+	.what {
+		visibility: visible;
+		opacity: 1;
+	}
+}
 /* INFOS ----------------------------------------*/
 	#infos {
 
@@ -573,7 +690,7 @@
 	}
 	.article-fullscreen:before {
 		content:'';
-		width: 99.5%;
+		width: 99.2%;
 		
 		height: 33vh;
 		background: rgba(0,0,0,0.75);
@@ -597,6 +714,8 @@
 		height: 0;
 		visibility: hidden;
 		opacity: 0;
+		display: none;
+		flex-direction: column;
 		transition: all 0.25s;
 	}
 	.article-fullscreen:after {
@@ -614,12 +733,6 @@
 		opacity: 1;
 		visibility: visible;
 	}
-	#sw {
-		background: url(../img/articles/sw.jpg) no-repeat;	
-	}
-	#sw:after {
-		 content: 'Shadoworld';
-	} 
 	#ocs {
 		background: url(../img/articles/ocs.jpg) no-repeat;
 	}
@@ -662,6 +775,7 @@
 		height: auto;
 		visibility: visible;
 		opacity: 1;
+		display: flex;
 	}
 	@media (min-width: 615px) {
 		.article {
@@ -685,9 +799,9 @@
 
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
 	}
-	@media (min-width: 480px) {
+	@media (min-width: 615px) {
 		.pro {
 			display: none;
 		}

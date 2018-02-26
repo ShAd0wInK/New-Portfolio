@@ -24,7 +24,7 @@
 		});
 	});
 	gotoProjects.addEventListener('click', function() {
-		document.querySelector('#projects_anchor').scrollIntoView({
+		document.querySelector('#ad').scrollIntoView({
 				behavior: 'smooth',
 		});
 	});
@@ -103,7 +103,7 @@
 	        		articleContent[i].classList.toggle('is-active');
 	         };
 	   	};
-	      articleFullscreen[j].scrollIntoView( {
+	      articleContent[j].scrollIntoView( {
 				behavior: 'smooth',
 			});
 		});
@@ -137,10 +137,19 @@
 		var slider = document.getElementById("infos");
 		var yPos = window.pageYOffset / slider.dataset.speed;
 		yPos = -yPos;
-		var coords = '0% '+ yPos + 'px';
+		var coords = '100% '+ yPos - 100 + 'px';
 		slider.style.backgroundPosition = coords;	
 	});
 
+var miniMenuSquare = document.querySelectorAll('.miniMenu .square');
+var what = document.querySelector('.what');
+
+for (var i = 0; i < miniMenuSquare.length; i++) {
+	miniMenuSquare[i].addEventListener('mouseover', function() {
+		what.style.visibility = 'hidden';
+		what.style.opacity = '0';
+	});
+}
 
 
 		
