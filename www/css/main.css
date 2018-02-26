@@ -590,6 +590,28 @@
     stroke-dashoffset: -1000;
   }
 }
+#cadre {
+			position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
+		.cadrePoly, .cadreLine {
+			fill: none;
+			stroke: #33CCA0;
+			stroke-width: 4;
+			stroke-dashoffset: 1000;
+			stroke-dasharray: 1000;
+		 	animation: complete 10s infinite linear;
+		}
+		@keyframes complete {
+		  	to {
+		    	stroke-dashoffset: -1000;
+		  	}
+		}
+		.cadreLine {
+			animation-delay: 0.5s;
+		}
 .what {
 	position: absolute;
 	top: 46.5%;
