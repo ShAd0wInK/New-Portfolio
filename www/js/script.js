@@ -6,6 +6,15 @@
 		gotoProjects = document.querySelectorAll('.gotoProjects');
 		gotoPro = document.querySelectorAll('.gotoPro');
 
+		gotoFooter = document.querySelector('.gotoFooter');
+	
+		gotoFooter.addEventListener('click', function() {
+			document.querySelector('.footer').scrollIntoView({
+				behavior: 'smooth',
+			});
+		});
+
+
 	for (var i = 0; i < gtt.length; i++) {
 		gtt[i].addEventListener('click', function() {
 			document.querySelector('#home').scrollIntoView({
@@ -99,19 +108,7 @@
 		btt.classList.toggle('btt-anim');
 		
 	});
-	var gotoMenu = document.querySelector('.gotoMenu');
-	gotoMenu.addEventListener('click', function() {
-		menu.classList.toggle('menu-cursor');
-		lineFirst.classList.toggle('lineFirst-anim');
-		lineCrossL.classList.toggle('lineCrossL-anim');
-		lineCrossR.classList.toggle('lineCrossR-anim');
-		lineShort.classList.toggle('line-short-anim');
-		menuOverlay.classList.toggle('menuOverlay-anim');
-		for (var i = 0; i < squares.length; i++) {
-			squares[i].classList.toggle('square-anim');
-		};
-		btt.classList.toggle('btt-anim');
-	})
+		
 
 // PROJECTS DISPLAY
 	var articleFullscreen = document.querySelectorAll('.article-fullscreen');
@@ -153,18 +150,18 @@
 	});
 
 var miniMenuSquare = document.querySelectorAll('.miniMenu .square');
-var what = document.querySelector('.what');
+var whatBox = document.querySelector('.whatBox');
 
 for (var i = 0; i < miniMenuSquare.length; i++) {
 	miniMenuSquare[i].addEventListener('mouseover', function() {
-		what.style.visibility = 'hidden';
-		what.style.opacity = '0';
+		whatBox.style.visibility = 'hidden';
+		whatBox.style.opacity = '0';
 	});
 }
-// what.addEventListener('mouseover', function() {
-// 	what.style.visibility = 'hidden';
-// 		what.style.opacity = '0';
-// 	});
+whatBox.addEventListener('mouseover', function() {
+	whatBox.style.visibility = 'hidden';
+		whatBox.style.opacity = '0';
+	});
 
 
 		
