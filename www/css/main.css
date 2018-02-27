@@ -30,7 +30,7 @@
 
 /* GLOBAL ---------------------------------------*/
 	body {
-		background: #000;
+		background: #111;
 		color: #fff;
 
 		font-family: "JosefinSans-Light", Arial;
@@ -49,9 +49,11 @@
 	a {
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 	}
+	
+
 	.mainTitle {
 		color: #fff;
-		background: #000;
+		background: #111;
 		padding: 25px 25px 5px;
 		margin-bottom: 50px;
 
@@ -73,7 +75,7 @@
 		margin-right: 5px;
 
 		position: relative;
-		z-index: -1;
+		z-index: 2;
 		bottom: -17px;
 		right: -2px;
 	}
@@ -84,23 +86,7 @@
 	.text {
 		line-height: 1.5;
 	}
-	.textLink {
-		color: #CDFFDB;
-
-		font-family: "Josefin Sans";
-		text-decoration: none;
-
-		position: relative;
-	}
-	.link {
-		color: #CDFFDB;
-
-		font-family: "Josefin Sans";
-		font-size: 24px;
-		text-decoration: none;
-
-		position: relative;
-	}
+	
 	.gl-line {
 		background: #33CCA0;
 
@@ -112,11 +98,23 @@
 		width: 185px;
 		margin: 12.5px auto;
 	}
-	.logo {
-		width: 30px;
-		height: auto;
+	
+/* LINK -----------------------------------------*/
 
-		margin: 5px;
+	.textLink, .link {
+		color: #CDFFDB;
+
+		font-family: "Josefin Sans";
+		text-decoration: none;
+
+		position: relative;
+	}
+	.link {
+		font-size: 24px;
+	}
+	.link-anim {
+		position: relative;
+		z-index: 0;
 	}
 	.link-anim:hover {
 		color: #fff;
@@ -130,7 +128,7 @@
 	    height: 40%;
 
 	    position: absolute;
-	    z-index: -2;
+	    z-index: -1;
 	    top: 57%;
 	    left: 11px;
 
@@ -194,36 +192,30 @@
 		position: relative;
 		z-index: 666;
 	}
-	.decoTop {
+	.decoTop, .decoBottom {
 		width: 25px;
 		height: 25px;
 		
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
 
-		position: fixed;
-		z-index: 3; 
-		top: 12px;
-		left: 12px;
+		position: fixed; 
+		z-index: 666;
 
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 	}
+	.decoTop {
+		flex-wrap: wrap;
+		
+		top: 12px;
+		left: 12px;
+	}
 	.decoBottom {
-		width: 25px;
-		height: 25px;
-
-		display: flex;
 		flex-direction: row-reverse;
-		justify-content: space-between;
 		flex-wrap: wrap-reverse;
 
-		position: fixed;
-		z-index: 3; 
 		bottom: 7px;
 		right: 12px;
-
-		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 	}
 	.btt {
 		color: #33CCA0;
@@ -232,7 +224,7 @@
 		font-family: Helvetica;
 
 		position: fixed;
-		z-index: 3; 
+		z-index: 666; 
 		bottom: 6px;
 		left: 12px;
 
@@ -268,7 +260,7 @@
 		width: 10px;
 		height: 10px;
 		margin-bottom: 5px;
-
+		
 		transition: all ease-out 0.25s;
 	}
 	.square-anim {
@@ -278,7 +270,6 @@
 		position: fixed;
 		display: none;
 		flex-direction: column;
-		z-index: -1;
 		top: 50%;
 	transform: translate(-50%, 0);
 		right: 12px;
@@ -304,7 +295,7 @@
     	position: absolute;
     	z-index: -1;
     	top: 0;
-    	right: 50px !important;
+    	right: 30px !important;
 
     	opacity: 0;
 
@@ -316,29 +307,39 @@
 	
 	.miniMenu .gotoHome:hover:after {
 		opacity: 1;
-      right: 87px !important;
+      right: 82px !important;
 	}
 	.miniMenu .gotoInfos:after {
 		content: 'INFOS';
-		top: 20px;
+		top: 21px;
 	}
 	
 	.miniMenu .gotoInfos:hover:after {
 		opacity: 1;
-      right: 67px !important;
+      right: 62px !important;
 	}
 	.miniMenu .gotoProjects:after {
 		content: 'PROJETS';
-		top: 42px;
+		top: 44px;
 	}
 	
 	.miniMenu .gotoProjects:hover:after {
 		opacity: 1;
-      right: 85px !important;
+      right: 80px !important;
 	}
+	.miniMenu .gotoMenu:after {
+		content: 'PRO';
+		top: 65px;
+	}
+	
+	.miniMenu .gotoMenu:hover:after {
+		opacity: 1;
+      right: 45px !important;
+	}
+
 	.miniMenu .text {
 		position: absolute;
-		bottom: 92px;
+		bottom: 112px;
 		right: -17px;
 		transform: rotate(90deg);
 		font-size: 16px;
@@ -354,13 +355,16 @@
 		justify-content: space-between;
 
 		position: fixed;
-		z-index: 3;
+		z-index: 666;
 		top: 12px;
 		right: 12px;
 
 		transition: all ease-out 0.25s;
 
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
+	}
+	.menu:hover > .line-short {
+		right: 0px;
 	}
 	.menu-cursor {
 		cursor: url(../img/cursor/menu_cursor_link.png) 12 12, pointer;
@@ -447,7 +451,7 @@
 		align-items: center;
 
 		position: fixed;
-		z-index: 2;
+		z-index: 333;
 
 		visibility: hidden;
 		opacity: 0;
@@ -494,24 +498,18 @@
 		font-size: 36px;
 		    font-family: "JosefinSans-Bold"
 	}
-	.menuList2 .link-anim {
+	.menuList2 .text .link-anim {
 		transition: all ease-out 0.3s;
+		position: relative;
+		z-index: 0;
+		cursor: url(../img/cursor/menu_cursor_link.png) 12 12, pointer;
+
 	}
-	.menuList .link-anim:after {
+	.menuList2 .text .link-anim:after {
 	    content: '';
 	    background: #fff;
-
-	    width: 0%;
-	    height: 40%;
-
-	    position: absolute;
-	    z-index: -2;
-	    top: 57%;
-	    left: 11px;
-
-	    transition: all ease-out 0.3s;
 	}
-	.menuList .link-anim:hover::after {
+	.menuList2 .text .link-anim:hover::after {
 	   width: 100%;
 	}
 	
@@ -541,7 +539,7 @@
 	   height: 40%;
 
 	   position: absolute;
-	   z-index: -2;
+	   z-index: -1;
 	   top: 57%;
 	   left: 11px;
 
@@ -614,7 +612,7 @@
 		}
 .what {
 	position: absolute;
-	top: 46.5%;
+	top: 47%;
 	transform: translate(-50%, 0);
 	right: 35px;
 	width: 75px;
@@ -639,7 +637,7 @@
 
 	}
 	50% {
-		transform: translate(0, 48px);
+		transform: translate(0, 68px);
 
 	}
 }
@@ -685,9 +683,7 @@
 	#projects {
 		color: #fff;
 	}
-	#projects h3 {
-		background: #000;
-	}
+	
 	.articles {
 		display: flex;
 		flex-wrap: wrap;
@@ -883,39 +879,6 @@
 		}
 	}
 
-/* LOADER ---------------------------------------*/
-	.loader {
-		background: #000;
-
-		width: 100%;
-		height: 100vh;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		position: fixed;
-		z-index: 999;
-		overflow: hidden;
-		visibility: visible;
-		opacity: 1;
-		
-		transition: all 0.25s;
-	}
-	circle, line {
-		fill: none;
-		stroke: #33CCA0;
-		stroke-width: 10;	
-		stroke-dashoffset: 1000;
-		stroke-dasharray: 1000;
-		animation: dash 2s infinite linear;
-	}
-	@keyframes dash {
-	  	to {
-	    	stroke-dashoffset: -1000;
-	  	}
-	}
 
 /* KEYFRAMES-------------------------------------*/
 	.appear {
