@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="23px" height="11px" viewBox="0 0 23 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="23px" height="5px" viewBox="0 0 23 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 2</title>
+    <title>arrow</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-2" transform="translate(0.000000, -1.000000)">
-            <text id="hover-?" font-family="JosefinSans-Light, Josefin Sans" font-size="6" font-weight="300" fill="#FFFFFF">
-                <tspan x="0" y="6">hover ? </tspan>
-            </text>
-            <g id="Group" transform="translate(11.500000, 9.500000) rotate(-270.000000) translate(-11.500000, -9.500000) translate(9.000000, -2.000000)">
-                <polygon id="Triangle-2" fill="#33CCA0" points="2.5 0 5 5 0 5"></polygon>
+        <g id="arrow">
+            <g id="Group" transform="translate(11.500000, 2.500000) rotate(90.000000) translate(-11.500000, -2.500000) translate(9.000000, -9.000000)">
+                <polygon id="Triangle-2" fill="#33CCA0" fill-rule="nonzero" points="2.5 0 5 5 0 5"></polygon>
                 <path d="M2.5,4.5 L2.5,22.5" id="Line" stroke="#33CCA0" stroke-linecap="square"></path>
             </g>
         </g>

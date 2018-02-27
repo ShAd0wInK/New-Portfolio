@@ -610,19 +610,27 @@
 		.cadrePoly {
 			animation-delay: 0.5s;
 		}
-.what {
-	position: absolute;
-	top: 47%;
-	transform: translate(-50%, 0);
-	right: 35px;
-	width: 75px;
-	height: auto;
-	;
-	visibility: hidden;
-	opacity: 0;
+.whatBox {
+	
 
-	transition: all 0.25s;
-	animation: popup infinite 3.33s;
+}
+.whatBox {
+	width: 75px;
+	position: fixed;
+	top: 47.5%;
+	transform: translate(-50%, 0);
+	right: 50px;
+	animation: popup infinite 3.333s ease-in-out;
+}
+.whatBoxText {
+	font-family: "JosefinSans-Light";
+	font-size: 16px;
+}
+.what {
+	width: 75px;
+}
+.whatBox:before {
+
 
 }
 @media (min-width: 615px) {
@@ -867,6 +875,9 @@
 	    right: 2px;
 	    bottom: -13px;
 	}
+	footer .text {
+		font-family: "JosefinSans-Light";
+	}
 	.oups {
 
 	}
@@ -1011,7 +1022,6 @@
 	      transform: scale3d(1, 1, 1);
 	  	}
 	}
-
 
 	
 
