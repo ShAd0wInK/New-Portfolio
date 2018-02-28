@@ -107,7 +107,7 @@ background-position: center;
 /* LINK -----------------------------------------*/
 
 	.textLink, .link {
-		color: #9CA6F4;
+		color: #3396CC;
 
 		font-family: "Josefin Sans";
 		text-decoration: none;
@@ -128,7 +128,7 @@ background-position: center;
 	
 	.link-anim:after {
 	    content: '';
-	    background: #9CA6F4;
+	    background: #3396CC;
 
 	    width: 0%;
 	    height: 40%;
@@ -138,7 +138,7 @@ background-position: center;
 	    top: 57%;
 	    left: 11px;
 
-	    transition: all ease-out 0.3s;
+	    transition: all .3s ease-out;
 	}
 	.link-anim:hover::after {
 	   width: 95%;
@@ -156,12 +156,12 @@ background-position: center;
 	   	transition: all 0.3s;
 	}
 	::-webkit-scrollbar-thumb:hover {
-	   	background: #9CA6F4; 
+	   	background: #3396CC; 
 	}
 
 /* CTA ------------------------------------------*/
 	.cta {
-		background: #9CA6F4;
+		background: #3396CC;
 		width: 5px;
 		height: 100px;
 		position: absolute;
@@ -180,7 +180,7 @@ background-position: center;
 		}
 	}
 	.cta:hover {
-		background: #9CA6F4;
+		background: #3396CC;
 	}
 	.cta:before {
 		content: 'TOUCH';
@@ -309,38 +309,42 @@ background-position: center;
 	}
 	.miniMenu .gotoHome:after {
 		content: 'ACCUEIL';
+
+      right: 82px !important;
 	}
 	
 	.miniMenu .gotoHome:hover:after {
 		opacity: 1;
-      right: 82px !important;
 	}
 	.miniMenu .gotoInfos:after {
 		content: 'INFOS';
 		top: 21px;
+
+      right: 62px !important;
 	}
 	
 	.miniMenu .gotoInfos:hover:after {
 		opacity: 1;
-      right: 62px !important;
 	}
 	.miniMenu .gotoProjects:after {
 		content: 'PROJETS';
 		top: 44px;
+
+      right: 80px !important;
 	}
 	
 	.miniMenu .gotoProjects:hover:after {
 		opacity: 1;
-      right: 80px !important;
 	}
 	.miniMenu .gotoFooter:after {
 		content: 'CONTACT';
 		top: 65px;
+
+      right: 88px !important;
 	}
 	
 	.miniMenu .gotoFooter:hover:after {
 		opacity: 1;
-      right: 88px !important;
 	}
 
 	.miniMenu .text {
@@ -484,41 +488,6 @@ background-position: center;
 		align-items: center;
 		justify-content: center;
 	}
-	.menuList2 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		position: relative;
-	}
-	.menuList2 .text {
-		    font-size: 36px;
-		    font-family: "JosefinSans-Bold"
-	}
-	.menuList2 .link {
-		color: #000;
-		font-size: 36px;
-		    font-family: "JosefinSans-Bold"
-	}
-	.menuList2 .text .link-anim {
-		transition: all ease-out 0.3s;
-		position: relative;
-		z-index: 0;
-		cursor: url(../img/cursor/menu_cursor_link.png) 12 12, pointer;
-
-	}
-	.menuList2 .text .link-anim:after {
-	    content: '';
-	    background: #fff;
-	}
-	.menuList2 .text .link-anim:hover::after {
-	   width: 100%;
-	}
-	
-	@media (min-width: 480px) {
-		
-	
-	}
 	.menuList-link {
 		color: #000;
 
@@ -621,7 +590,7 @@ background-position: center;
 .whatBox {
 	width: 75px;
 	position: fixed;
-	top: 12px;
+	top: 7px;
 	transform: translate(-50%, 0);
 	right: 40px;
 	animation: popup infinite 3.333s ease-in-out;
@@ -671,7 +640,7 @@ background-position: center;
 	}
 	@media (min-width: 666px) {
 		#infos {
-			background: url(../img/gotohetic.jpg) no-repeat ;
+			background: url(../img/gotohetic.jpg) no-repeat;
 			background-size: cover;
 		}
 	}
@@ -732,7 +701,7 @@ background-position: center;
 		color: #33CCA0;
 	}
 	.article-link {
-		color: #9CA6F4;
+		color: #3396CC;
 
 		font-family: "Josefin Sans";
 		font-size: 20px;
@@ -778,7 +747,7 @@ background-position: center;
 		transition: all 0.25s;
 	}
 	.article-fullscreen:after {
-	    color: #33CCA0;
+	    color: #3396CC;
 	    font-size: 36px;
 	    font-family: "JosefinSans-SemiBold";
 	    position: absolute;
@@ -878,6 +847,19 @@ background-position: center;
 	}
 	footer .text {
 		font-family: "JosefinSans-Light";
+	}
+	.linear:after {
+		    content: '';
+    width: 0%;
+    height: 2px;
+    background: #33CCA0;
+    position: absolute;
+    top: 41px;
+    left: 3px;
+    transition: all 0.3s ease;
+	}
+	.contact:hover > .linear:after {
+		width: 97%;
 	}
 	.oups {
 
@@ -1056,6 +1038,7 @@ background-position: center;
 }
 .contact li {
 	padding: 25px 12.5px;
+	position: relative;
 }
 .contact ul li a {
 	
@@ -1075,19 +1058,65 @@ background-position: center;
 	background: url(../img/cv_anim.svg);
 	background-size: 100%;
 }
+#cv:after {
+	content:'CV';
+	color: #fff;
+	position: absolute;
+	font-family: "Josefin Sans";
+	left: 23px;
+	bottom: 1px;
+	opacity: 0;
+	transition: all 0.3s
+}
+#cv:hover::after {
+	opacity: 1;
+	
+}
 #in {
 	background: url('../img/linkedin.svg');
+	position: relative;
+	top: 0px;
 }
 #in:hover {
 	background: url('../img/linkedin_anim.svg');
 	background-size: 100%;
 }
+#in:after {
+	content:'LinkedIn';
+	color: #fff;
+	position: absolute;
+	font-family: "Josefin Sans";
+	left: -15px;
+	bottom: -24px;
+	opacity: 0;
+	transition: all 0.3s
+}
+#in:hover::after {
+	opacity: 1;
+	
+}
 #mail {
 	background: url('../img/mail.svg');
+	position: relative;
+	bottom: -7px;
 }
 #mail:hover {
 	background: url('../img/mail_anim.svg');
 	background-size: 100%;
+}
+#mail:after {
+	content:'email';
+	color: #fff;
+	position: absolute;
+	font-family: "Josefin Sans";
+	left:0px;
+	bottom: -17px;
+	opacity: 0;
+	transition: all 0.3s
+}
+#mail:hover::after {
+	opacity: 1;
+	
 }
 
 
