@@ -30,11 +30,10 @@
 
 /* GLOBAL ---------------------------------------*/
 	body {
-		background-color: #000000;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' %3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23111111'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23444' points='90%2C150 0%2C300 180%2C300'/%3E%3Cpolygon points='90%2C150 180%2C0 0%2C0'/%3E%3Cpolygon fill='%23AAA' points='270%2C150 360%2C0 180%2C0'/%3E%3Cpolygon fill='%23DDD' points='450%2C150 360%2C300 540%2C300'/%3E%3Cpolygon fill='%23999' points='450%2C150 540%2C0 360%2C0'/%3E%3Cpolygon points='630%2C150 540%2C300 720%2C300'/%3E%3Cpolygon fill='%23DDD' points='630%2C150 720%2C0 540%2C0'/%3E%3Cpolygon fill='%23444' points='810%2C150 720%2C300 900%2C300'/%3E%3Cpolygon fill='%23FFF' points='810%2C150 900%2C0 720%2C0'/%3E%3Cpolygon fill='%23DDD' points='990%2C150 900%2C300 1080%2C300'/%3E%3Cpolygon fill='%23444' points='990%2C150 1080%2C0 900%2C0'/%3E%3Cpolygon fill='%23DDD' points='90%2C450 0%2C600 180%2C600'/%3E%3Cpolygon points='90%2C450 180%2C300 0%2C300'/%3E%3Cpolygon fill='%23666' points='270%2C450 180%2C600 360%2C600'/%3E%3Cpolygon fill='%23AAA' points='270%2C450 360%2C300 180%2C300'/%3E%3Cpolygon fill='%23DDD' points='450%2C450 360%2C600 540%2C600'/%3E%3Cpolygon fill='%23999' points='450%2C450 540%2C300 360%2C300'/%3E%3Cpolygon fill='%23999' points='630%2C450 540%2C600 720%2C600'/%3E%3Cpolygon fill='%23FFF' points='630%2C450 720%2C300 540%2C300'/%3E%3Cpolygon points='810%2C450 720%2C600 900%2C600'/%3E%3Cpolygon fill='%23DDD' points='810%2C450 900%2C300 720%2C300'/%3E%3Cpolygon fill='%23AAA' points='990%2C450 900%2C600 1080%2C600'/%3E%3Cpolygon fill='%23444' points='990%2C450 1080%2C300 900%2C300'/%3E%3Cpolygon fill='%23222' points='90%2C750 0%2C900 180%2C900'/%3E%3Cpolygon points='270%2C750 180%2C900 360%2C900'/%3E%3Cpolygon fill='%23DDD' points='270%2C750 360%2C600 180%2C600'/%3E%3Cpolygon points='450%2C750 540%2C600 360%2C600'/%3E%3Cpolygon points='630%2C750 540%2C900 720%2C900'/%3E%3Cpolygon fill='%23444' points='630%2C750 720%2C600 540%2C600'/%3E%3Cpolygon fill='%23AAA' points='810%2C750 720%2C900 900%2C900'/%3E%3Cpolygon fill='%23666' points='810%2C750 900%2C600 720%2C600'/%3E%3Cpolygon fill='%23999' points='990%2C750 900%2C900 1080%2C900'/%3E%3Cpolygon fill='%23999' points='180%2C0 90%2C150 270%2C150'/%3E%3Cpolygon fill='%23444' points='360%2C0 270%2C150 450%2C150'/%3E%3Cpolygon fill='%23FFF' points='540%2C0 450%2C150 630%2C150'/%3E%3Cpolygon points='900%2C0 810%2C150 990%2C150'/%3E%3Cpolygon fill='%23222' points='0%2C300 -90%2C450 90%2C450'/%3E%3Cpolygon fill='%23FFF' points='0%2C300 90%2C150 -90%2C150'/%3E%3Cpolygon fill='%23FFF' points='180%2C300 90%2C450 270%2C450'/%3E%3Cpolygon fill='%23666' points='180%2C300 270%2C150 90%2C150'/%3E%3Cpolygon fill='%23222' points='360%2C300 270%2C450 450%2C450'/%3E%3Cpolygon fill='%23FFF' points='360%2C300 450%2C150 270%2C150'/%3E%3Cpolygon fill='%23444' points='540%2C300 450%2C450 630%2C450'/%3E%3Cpolygon fill='%23222' points='540%2C300 630%2C150 450%2C150'/%3E%3Cpolygon fill='%23AAA' points='720%2C300 630%2C450 810%2C450'/%3E%3Cpolygon fill='%23666' points='720%2C300 810%2C150 630%2C150'/%3E%3Cpolygon fill='%23FFF' points='900%2C300 810%2C450 990%2C450'/%3E%3Cpolygon fill='%23999' points='900%2C300 990%2C150 810%2C150'/%3E%3Cpolygon points='0%2C600 -90%2C750 90%2C750'/%3E%3Cpolygon fill='%23666' points='0%2C600 90%2C450 -90%2C450'/%3E%3Cpolygon fill='%23AAA' points='180%2C600 90%2C750 270%2C750'/%3E%3Cpolygon fill='%23444' points='180%2C600 270%2C450 90%2C450'/%3E%3Cpolygon fill='%23444' points='360%2C600 270%2C750 450%2C750'/%3E%3Cpolygon fill='%23999' points='360%2C600 450%2C450 270%2C450'/%3E%3Cpolygon fill='%23666' points='540%2C600 630%2C450 450%2C450'/%3E%3Cpolygon fill='%23222' points='720%2C600 630%2C750 810%2C750'/%3E%3Cpolygon fill='%23FFF' points='900%2C600 810%2C750 990%2C750'/%3E%3Cpolygon fill='%23222' points='900%2C600 990%2C450 810%2C450'/%3E%3Cpolygon fill='%23DDD' points='0%2C900 90%2C750 -90%2C750'/%3E%3Cpolygon fill='%23444' points='180%2C900 270%2C750 90%2C750'/%3E%3Cpolygon fill='%23FFF' points='360%2C900 450%2C750 270%2C750'/%3E%3Cpolygon fill='%23AAA' points='540%2C900 630%2C750 450%2C750'/%3E%3Cpolygon fill='%23FFF' points='720%2C900 810%2C750 630%2C750'/%3E%3Cpolygon fill='%23222' points='900%2C900 990%2C750 810%2C750'/%3E%3Cpolygon fill='%23222' points='1080%2C300 990%2C450 1170%2C450'/%3E%3Cpolygon fill='%23FFF' points='1080%2C300 1170%2C150 990%2C150'/%3E%3Cpolygon points='1080%2C600 990%2C750 1170%2C750'/%3E%3Cpolygon fill='%23666' points='1080%2C600 1170%2C450 990%2C450'/%3E%3Cpolygon fill='%23DDD' points='1080%2C900 1170%2C750 990%2C750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-
-background-size: cover;
-background-position: center;
+		background-color: #000000; /* GOD DAMN IT WHAT A FAT WALLAPAPER */
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' %3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23111111'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23444' points='90%2C150 0%2C300 180%2C300'/%3E%3Cpolygon points='90%2C150 180%2C0 0%2C0'/%3E%3Cpolygon fill='%23AAA' points='270%2C150 360%2C0 180%2C0'/%3E%3Cpolygon fill='%23DDD' points='450%2C150 360%2C300 540%2C300'/%3E%3Cpolygon fill='%23999' points='450%2C150 540%2C0 360%2C0'/%3E%3Cpolygon points='630%2C150 540%2C300 720%2C300'/%3E%3Cpolygon fill='%23DDD' points='630%2C150 720%2C0 540%2C0'/%3E%3Cpolygon fill='%23444' points='810%2C150 720%2C300 900%2C300'/%3E%3Cpolygon fill='%23FFF' points='810%2C150 900%2C0 720%2C0'/%3E%3Cpolygon fill='%23DDD' points='990%2C150 900%2C300 1080%2C300'/%3E%3Cpolygon fill='%23444' points='990%2C150 1080%2C0 900%2C0'/%3E%3Cpolygon fill='%23DDD' points='90%2C450 0%2C600 180%2C600'/%3E%3Cpolygon points='90%2C450 180%2C300 0%2C300'/%3E%3Cpolygon fill='%23666' points='270%2C450 180%2C600 360%2C600'/%3E%3Cpolygon fill='%23AAA' points='270%2C450 360%2C300 180%2C300'/%3E%3Cpolygon fill='%23DDD' points='450%2C450 360%2C600 540%2C600'/%3E%3Cpolygon fill='%23999' points='450%2C450 540%2C300 360%2C300'/%3E%3Cpolygon fill='%23999' points='630%2C450 540%2C600 720%2C600'/%3E%3Cpolygon fill='%23FFF' points='630%2C450 720%2C300 540%2C300'/%3E%3Cpolygon points='810%2C450 720%2C600 900%2C600'/%3E%3Cpolygon fill='%23DDD' points='810%2C450 900%2C300 720%2C300'/%3E%3Cpolygon fill='%23AAA' points='990%2C450 900%2C600 1080%2C600'/%3E%3Cpolygon fill='%23444' points='990%2C450 1080%2C300 900%2C300'/%3E%3Cpolygon fill='%23222' points='90%2C750 0%2C900 180%2C900'/%3E%3Cpolygon points='270%2C750 180%2C900 360%2C900'/%3E%3Cpolygon fill='%23DDD' points='270%2C750 360%2C600 180%2C600'/%3E%3Cpolygon points='450%2C750 540%2C600 360%2C600'/%3E%3Cpolygon points='630%2C750 540%2C900 720%2C900'/%3E%3Cpolygon fill='%23444' points='630%2C750 720%2C600 540%2C600'/%3E%3Cpolygon fill='%23AAA' points='810%2C750 720%2C900 900%2C900'/%3E%3Cpolygon fill='%23666' points='810%2C750 900%2C600 720%2C600'/%3E%3Cpolygon fill='%23999' points='990%2C750 900%2C900 1080%2C900'/%3E%3Cpolygon fill='%23999' points='180%2C0 90%2C150 270%2C150'/%3E%3Cpolygon fill='%23444' points='360%2C0 270%2C150 450%2C150'/%3E%3Cpolygon fill='%23FFF' points='540%2C0 450%2C150 630%2C150'/%3E%3Cpolygon points='900%2C0 810%2C150 990%2C150'/%3E%3Cpolygon fill='%23222' points='0%2C300 -90%2C450 90%2C450'/%3E%3Cpolygon fill='%23FFF' points='0%2C300 90%2C150 -90%2C150'/%3E%3Cpolygon fill='%23FFF' points='180%2C300 90%2C450 270%2C450'/%3E%3Cpolygon fill='%23666' points='180%2C300 270%2C150 90%2C150'/%3E%3Cpolygon fill='%23222' points='360%2C300 270%2C450 450%2C450'/%3E%3Cpolygon fill='%23FFF' points='360%2C300 450%2C150 270%2C150'/%3E%3Cpolygon fill='%23444' points='540%2C300 450%2C450 630%2C450'/%3E%3Cpolygon fill='%23222' points='540%2C300 630%2C150 450%2C150'/%3E%3Cpolygon fill='%23AAA' points='720%2C300 630%2C450 810%2C450'/%3E%3Cpolygon fill='%23666' points='720%2C300 810%2C150 630%2C150'/%3E%3Cpolygon fill='%23FFF' points='900%2C300 810%2C450 990%2C450'/%3E%3Cpolygon fill='%23999' points='900%2C300 990%2C150 810%2C150'/%3E%3Cpolygon points='0%2C600 -90%2C750 90%2C750'/%3E%3Cpolygon fill='%23666' points='0%2C600 90%2C450 -90%2C450'/%3E%3Cpolygon fill='%23AAA' points='180%2C600 90%2C750 270%2C750'/%3E%3Cpolygon fill='%23444' points='180%2C600 270%2C450 90%2C450'/%3E%3Cpolygon fill='%23444' points='360%2C600 270%2C750 450%2C750'/%3E%3Cpolygon fill='%23999' points='360%2C600 450%2C450 270%2C450'/%3E%3Cpolygon fill='%23666' points='540%2C600 630%2C450 450%2C450'/%3E%3Cpolygon fill='%23222' points='720%2C600 630%2C750 810%2C750'/%3E%3Cpolygon fill='%23FFF' points='900%2C600 810%2C750 990%2C750'/%3E%3Cpolygon fill='%23222' points='900%2C600 990%2C450 810%2C450'/%3E%3Cpolygon fill='%23DDD' points='0%2C900 90%2C750 -90%2C750'/%3E%3Cpolygon fill='%23444' points='180%2C900 270%2C750 90%2C750'/%3E%3Cpolygon fill='%23FFF' points='360%2C900 450%2C750 270%2C750'/%3E%3Cpolygon fill='%23AAA' points='540%2C900 630%2C750 450%2C750'/%3E%3Cpolygon fill='%23FFF' points='720%2C900 810%2C750 630%2C750'/%3E%3Cpolygon fill='%23222' points='900%2C900 990%2C750 810%2C750'/%3E%3Cpolygon fill='%23222' points='1080%2C300 990%2C450 1170%2C450'/%3E%3Cpolygon fill='%23FFF' points='1080%2C300 1170%2C150 990%2C150'/%3E%3Cpolygon points='1080%2C600 990%2C750 1170%2C750'/%3E%3Cpolygon fill='%23666' points='1080%2C600 1170%2C450 990%2C450'/%3E%3Cpolygon fill='%23DDD' points='1080%2C900 1170%2C750 990%2C750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+		background-size: cover;
+		background-position: center;
 		color: #fff;
 
 		font-family: "JosefinSans-Light", Arial;
@@ -42,21 +41,12 @@ background-position: center;
 
 		cursor: url(../img/cursor/cursor.png) 2.5 2.5, auto;
 	}
-	@media (min-width: 480px) {
-		body {
-			
-		}
-	}
-	.body-hidden {
-		overflow: hidden;
-	}
 	a {
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 	}
-	
-
 	.mainTitle {
 		color: #fff;
+
 		padding: 25px 25px 5px;
 		margin-bottom: 50px;
 
@@ -64,6 +54,7 @@ background-position: center;
 
 		font-size: 36px;
 		font-family: "JosefinSans-SemiBold", Arial;
+
 		position: sticky;
 		-webkit-position: sticky;
 		z-index: 2;
@@ -88,10 +79,10 @@ background-position: center;
 	}
 	.text {
 		line-height: 1.5;
+
 		position: relative;
 		z-index: 5;
 	}
-	
 	.gl-line {
 		background: #33CCA0;
 
@@ -103,10 +94,17 @@ background-position: center;
 		width: 185px;
 		margin: 12.5px auto;
 	}
+	.is-active {
+		height: auto !important;
+		
+		display: flex !important;
+
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
 	
 /* LINK -----------------------------------------*/
-
-	.textLink, .link {
+	.textLink, .link, .link-anim {
 		color: #3396CC;
 
 		font-family: "Josefin Sans";
@@ -118,27 +116,26 @@ background-position: center;
 		font-size: 24px;
 	}
 	.link-anim {
-		position: relative;
 		z-index: 0;
-		transition: all 0.3s;
+
+		transition: all 0.25s ease-out;
 	}
 	.link-anim:hover {
 		color: #fff;
 	}
-	
 	.link-anim:after {
-	    content: '';
-	    background: #3396CC;
+	   content: '';
+	   background: #3396CC;
 
-	    width: 0%;
-	    height: 40%;
+	   width: 0%;
+	   height: 40%;
 
-	    position: absolute;
-	    z-index: -1;
-	    top: 57%;
-	    left: 11px;
+	   position: absolute;
+	   z-index: -1;
+	   top: 57%;
+	   left: 11px;
 
-	    transition: all .3s ease-out;
+	   transition: all 0.25s ease-out;
 	}
 	.link-anim:hover::after {
 	   width: 95%;
@@ -153,7 +150,7 @@ background-position: center;
 	}
 	::-webkit-scrollbar-thumb {
 	   	background: #33CCA0; 
-	   	transition: all 0.3s;
+	   	transition: all 0.25s ease-out;
 	}
 	::-webkit-scrollbar-thumb:hover {
 	   	background: #3396CC; 
@@ -162,17 +159,20 @@ background-position: center;
 /* CTA ------------------------------------------*/
 	.cta {
 		background: #3396CC;
+
 		width: 5px;
 		height: 100px;
+
 		position: absolute;
-		transform: translate(-50%, 0);
 		bottom: -12px;
+		transform: translate(-50%, 0);
+
 		visibility: visible;
 		opacity: 1;
-		transition: all 0.25s;
-		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 
-	
+		transition: all 0.25s ease-out;
+
+		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 	}
 	@media (min-width: 615px) {
 		.cta {
@@ -184,19 +184,20 @@ background-position: center;
 	}
 	.cta:before {
 		content: 'TOUCH';
+
 		text-align: center;
 		font-size: 18px;
+
 		position: absolute;
 		left: 50%;
-		transform: translate(-50%, 0);
 		top: -25px;
-
+		transform: translate(-50%, 0);
 	}	
 	
 /* FIXED ----------------------------------------*/
 	#fixed {
 		position: relative;
-		z-index: 666;
+		z-index: 666; /*HELL YEAH 🤘*/
 	}
 	.decoTop, .decoBottom {
 		width: 25px;
@@ -238,11 +239,14 @@ background-position: center;
 	}
 	.btt:after {
 		content: 'TOP';
+
 		color: #fff;
+
 		font-family: "Josefin Sans";
 		font-size: 16px;
     	
     	display: flex;
+
     	position: absolute;
     	z-index: -1;
     	bottom: 4px;
@@ -250,7 +254,7 @@ background-position: center;
 
     	opacity: 0;
 
-    	transition: all ease-out 0.25s;
+    	transition: all 0.25s ease-out;
 	}
 	.btt:hover:after {
 		opacity: 1;
@@ -267,23 +271,23 @@ background-position: center;
 		height: 10px;
 		margin-bottom: 5px;
 		
-		transition: all ease-out 0.25s;
+		transition: all 0.25s ease-out;
 	}
 	.square-anim {
 		background: #000;
 	}
 	.miniMenu {
-		position: fixed;
 		display: none;
 		flex-direction: column;
+
+		position: fixed;
 		top: 12px;
-	transform: translate(-50%, 0);
 		right: 7px;
+		transform: translate(-50%, 0);
 	}
 	@media (min-width: 615px) {
 		.miniMenu {
 			display: flex;
-
 		}
 	}
 	.miniMenu .square {
@@ -291,29 +295,25 @@ background-position: center;
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 	}
 	.miniMenu .square:after {
-		
-		font-family: "Josefin Sans";
-		font-size: 16px;
-    	
     	width: 0%;
     	height: 0px;
+
+		font-family: "Josefin Sans";
+		font-size: 16px;
     	
     	position: absolute;
     	z-index: -1;
     	top: 0;
-    	right: 30px !important;
+    	right: 82px !important;
 
     	opacity: 0;
 
-    	transition: all ease-out 0.25s;
+    	transition: all 0.25s ease-out;
 	}
 	.miniMenu .gotoHome:after {
 		content: 'ACCUEIL';
-
-      right: 82px !important;
 	}
-	
-	.miniMenu .gotoHome:hover:after {
+	.miniMenu .square:hover:after {
 		opacity: 1;
 	}
 	.miniMenu .gotoInfos:after {
@@ -322,19 +322,11 @@ background-position: center;
 
       right: 62px !important;
 	}
-	
-	.miniMenu .gotoInfos:hover:after {
-		opacity: 1;
-	}
 	.miniMenu .gotoProjects:after {
 		content: 'PROJETS';
 		top: 44px;
 
       right: 80px !important;
-	}
-	
-	.miniMenu .gotoProjects:hover:after {
-		opacity: 1;
 	}
 	.miniMenu .gotoFooter:after {
 		content: 'CONTACT';
@@ -342,17 +334,13 @@ background-position: center;
 
       right: 88px !important;
 	}
-	
-	.miniMenu .gotoFooter:hover:after {
-		opacity: 1;
-	}
-
 	.miniMenu .text {
+		font-size: 16px;
+
 		position: absolute;
 		top: 102px;
 		right: -18px;
 		transform: rotate(90deg);
-		font-size: 16px;
 	}
 
 /* MENU -----------------------------------------*/
@@ -369,15 +357,15 @@ background-position: center;
 		top: 12px;
 		right: 12px;
 
-		transition: all ease-out 0.25s;
+		transition: all 0.25s ease-out;
 
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 	}
-	.menu:hover > .line-short {
-		right: 0px;
-	}
-	.menu-cursor {
-		cursor: url(../img/cursor/menu_cursor_link.png) 12 12, pointer;
+
+	@media (min-width: 615px) {
+		.menu {
+			display: none;
+		}
 	}
 	.menu:after {
 		content: 'MENU';
@@ -394,18 +382,17 @@ background-position: center;
 
     	opacity: 0;
 
-    	transition: all ease-out 0.25s;
+    	transition: all 0.25s ease-out;
 	}
-	
 	.menu:hover:after {
 		opacity: 1;
       right: 80px !important;
 	}
-	@media (min-width: 480px) {
-		.menu:hover:after {
-			content: 'PRO';
-			right: 65px !important;
-		}
+	.menu:hover > .line-short {
+		right: 0px;
+	}
+	.menu-cursor {
+		cursor: url(../img/cursor/menu_cursor_link.png) 12 12, pointer;
 	}
 	.line {
 		background: #33CCA0;
@@ -413,8 +400,7 @@ background-position: center;
 		width: 25px;
 		height: 3px;
 
-
-		transition: all ease-out 0.25s;
+		transition: all 0.25s ease-out;
 	}
 	.lineFirst-anim {
 		background: #000;
@@ -466,17 +452,9 @@ background-position: center;
 		visibility: hidden;
 		opacity: 0;
 
-		transition: all ease-out 0.25s;
+		transition: all 0.25s ease-out;
 
 		cursor: url(../img/cursor/menu_cursor.png) 2.5 2.5, auto;
-	}
-	
-	@media (min-width: 480px) {
-		
-		.menuOverlay .menuList {
-			display: none;
-		}
-		
 	}
 	.menuOverlay-anim {
 		visibility: visible;
@@ -514,7 +492,7 @@ background-position: center;
 	   top: 57%;
 	   left: 11px;
 
-	   transition: all ease-out 0.3s;
+	   transition: all 0.3s ease-out;
 	}
 	.menuList-link:hover:after {
 		width: 100%;
@@ -554,79 +532,82 @@ background-position: center;
 	 	animation: dash 8s infinite linear;
 	}
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: -1000;
-  }
-}
-#cadre {
-			position: absolute;
+	@keyframes dash {
+	  	to {
+	    	stroke-dashoffset: -1000;
+	  	}
+	}
+	#cadre {
+		position: absolute;
 		top: 50%;
 		left: 50%;
+
 		transform: translate(-50%, -50%);
-		}
-		.cadrePoly, .cadreLine {
-			fill: none;
-			stroke: #33CCA0;
-			stroke-width: 4;
-			stroke-dashoffset: 800;
-			stroke-dasharray: 800;
-		 	animation: complete 8s infinite linear;
-		}
-		@keyframes complete {
-		  	to {
-		    	stroke-dashoffset: -800;
-		  	}
-		}
-.delayLess {
-	animation-delay: 0.25s
-}
-.delay {
-	animation-delay: 0.45s
-}
-.delayPlus {
-	animation-delay: 0.35s;
-}
-.whatBox {
-	width: 75px;
-	position: fixed;
-	top: 7px;
-	transform: translate(-50%, 0);
-	right: 40px;
-	animation: popup infinite 3.333s ease-in-out;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.3s;
-}
-.whatBoxText {
-	font-family: "JosefinSans-Light";
-	font-size: 16px;
-}
-.what {
-	width: 75px;
-}
-.whatBox:before {
+	}
+	.cadrePoly, .cadreLine {
+		fill: none;
+		stroke: #33CCA0;
+		stroke-width: 4;
+		stroke-dashoffset: 800;
+		stroke-dasharray: 800;
 
-
-}
-@media (min-width: 615px) {
+	 	animation: complete 8s infinite linear;
+	}
+	@keyframes complete {
+	  	to {
+	    	stroke-dashoffset: -800;
+	  	}
+	}
+	.delayLess {
+		animation-delay: 0.25s
+	}
+	.delay {
+		animation-delay: 0.45s
+	}
+	.delayPlus {
+		animation-delay: 0.35s;
+	}
 	.whatBox {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-@keyframes popup {
-	0%, 100% {
-		transform: translate(0, 0);
+		width: 75px;
 
-	}
-	50% {
-		transform: translate(0, 68px);
+		position: fixed;
+		top: 7px;
+		right: 40px;
+		transform: translate(-50%, 0);
 
+		visibility: hidden;
+		opacity: 0;
+
+		animation: popup infinite 3.333s ease-in-out;
+		transition: all 0.25s ease-out;
 	}
-}
+	@media (min-width: 615px) {
+		.whatBox {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	.whatBoxText {
+		font-family: "JosefinSans-Light";
+		font-size: 16px;
+	}
+	.what {
+		width: 75px;
+	}
+	@keyframes popup {
+		0%, 100% {
+			transform: translate(0, 0);
+
+		}
+		50% {
+			transform: translate(0, 68px);
+
+		}
+	}
+
 /* INFOS ----------------------------------------*/
 	#infos {
+		background: rgba(255,255,255,0.05);
 
 		height: 100vh;
 		padding: 0 45px;
@@ -637,6 +618,8 @@ background-position: center;
 		align-items: center;
 
 		position: relative;
+
+		transition: all 0.25s;
 	}
 	@media (min-width: 666px) {
 		#infos {
@@ -644,8 +627,9 @@ background-position: center;
 			background-size: cover;
 		}
 	}
-	#infos p {
+	#infos .text {
 		margin-bottom: 25px;
+
 		text-align: center;
 	}
 	.dev {
@@ -671,7 +655,6 @@ background-position: center;
 	#projects {
 		color: #fff;
 	}
-	
 	.articles {
 		display: flex;
 		flex-wrap: wrap;
@@ -679,18 +662,33 @@ background-position: center;
 	}
 	.article {
 		width: 100%;
+		margin: 0 27px;
+
 		position: relative;
 		z-index: 0;
-		margin: 0 27px;
+	}
+	@media (min-width: 615px) {
+		.article {
+			width: 41%;
+			
+			margin: 0 25px;
+		}	
+	}
+	@media (min-width: 914px) {
+		.article {
+			width: 27%;
+			
+			margin: 0 25px;
+		}	
 	}
 	.article li {
 		margin-bottom: 12.5px;
 	}
-	
 	.article-mainTitle {
+		margin-bottom: 25px !important;
+
 		font-size: 24px;
 		font-family: "JosefinSans-SemiBold";
-		margin-bottom: 25px !important;
 	}
 	.article-title {
 		font-size: 20px;
@@ -711,55 +709,69 @@ background-position: center;
 	}
 	.article-fullscreen {
 		background-size: 100% !important;
+
 		height: 33vh;
-		border: 1px #fff solid;
 		margin-bottom: 25px;
+
+		border: 1px #fff solid;
+
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 	}
 	.article-fullscreen:before {
 		content:'';
-		width: 99.2%;
-		
-		height: 33vh;
+
 		background: rgba(0,0,0,0.75);
+
+		width: 99.2%;
+		height: 33vh;
+		padding: 0;
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+
 		position: absolute;
 		top: 1;
 		left: 1;
-		display: flex;
-		align-items: flex-end;
-		padding: 0;
-		justify-content: flex-start;
-		opacity: 0;
-		visibility: hidden;
 
-		transition: all 0.25s;
+		visibility: hidden;
+		opacity: 0;
+
+		transition: all 0.25s ease-out;
 	}
 	.article-fullscreen:hover::before {
-		opacity: 1;
 		visibility: visible;
+		opacity: 1;
+	}
+	.article-fullscreen:after {
+	   color: #3396CC;
+
+	   font-size: 36px;
+	   font-family: "JosefinSans-SemiBold";
+
+	   position: absolute;
+	   top: 27vh;
+	   left: 12.5px;
+
+	   visibility: hidden;
+	   opacity: 0;
+
+	   transition: all 0.25s ease-out;
+	}
+	.article-fullscreen:hover::after {
+		visibility: visible;
+		opacity: 1;
 	}
 	.article-content {
 		height: 0;
-		visibility: hidden;
-		opacity: 0;
+		
 		display: none;
 		flex-direction: column;
-		transition: all 0.25s;
-	}
-	.article-fullscreen:after {
-	    color: #3396CC;
-	    font-size: 36px;
-	    font-family: "JosefinSans-SemiBold";
-	    position: absolute;
-	    top: 27vh;
-	    left: 12.5px;
-	    opacity: 0;
-	    visibility: hidden;
-	    transition: all 0.25s;
-	}
-	.article-fullscreen:hover::after {
-		opacity: 1;
-		visibility: visible;
+
+		visibility: hidden;
+		opacity: 0;
+
+		transition: all 0.25s ease-out;
 	}
 	#ocs {
 		background: url(../img/articles/ocs.jpg) no-repeat;
@@ -790,89 +802,161 @@ background-position: center;
 	}
 	#ad:after {
 		content: 'Ancien Portfolio';
-
 	}
 	#mf {
 		background: url(../img/articles/mf.jpg) no-repeat;
 	}
 	#mf:after {
 		content: 'Multiforme';
-
 	}
-	.is-active {
-		height: auto;
-		visibility: visible;
-		opacity: 1;
+
+/* CONTACT --------------------------------------*/
+	.contact {
+		background: rgba(255,255,255,0.05);
+
+		padding: 25px;
+
 		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		transition: all 0.25s ease-out;
 	}
 	@media (min-width: 615px) {
-		.article {
-			width: 41%;
-			
-			margin: 0 25px;
-		}	
+		.contact {
+			flex-direction: row;
+		}
 	}
-	@media (min-width: 914px) {
-		.article {
-			width: 27%;
-			
-			margin: 0 25px;
-		}	
+	.contact:hover {
+		background: rgba(255,255,255,0.1);
 	}
+	.contact .text {
+		font-size: 36px;
+		font-family: "Josefin Sans";
+		display: flex;
+		text-align: center;
+	}
+	.contact ul {
+		display: flex;
+		padding: 0 12.5px;
+	}
+	.contact li {
+		padding: 25px 12.5px;
+		position: relative;
+	}
+	#cv, #in, #mail {
+		width: 50px;
+		height: 50px;
+		display: flex;
+		transition: all 0.25s ease-out;
+		background-size: 100% !important;
+	}
+	#cv:after, #in:after, #mail:after {
+		color: #fff;
 
-/* PRO ------------------------------------------*/
-	
+		font-family: "Josefin Sans";
 
+		position: absolute;
+		left: 23px;
+		bottom: 1px;
+
+		opacity: 0;
+
+		transition: all 0.25s ease-out;
+	}
+	#cv {
+		background: url(../img/cv.svg);
+	}
+	#cv:hover {
+		background: url(../img/cv_anim.svg);
+		background-size: 100%;
+	}
+	#cv:after {
+		content:'CV';
+	}
+	#cv:hover::after {
+		opacity: 1;
+	}
+	#in {
+		background: url('../img/linkedin.svg');
+		position: relative;
+		top: 0px;
+	}
+	#in:hover {
+		background: url('../img/linkedin_anim.svg');
+		background-size: 100%;
+	}
+	#in:after {
+		content:'LinkedIn';
+		left: -15px;
+		bottom: -24px;
+		opacity: 0;
+		transition: all 0.25s ease-out;
+	}
+	#in:hover::after {
+		opacity: 1;
+		
+	}
+	#mail {
+		background: url('../img/mail.svg');
+		position: relative;
+		bottom: -7px;
+	}
+	#mail:hover {
+		background: url('../img/mail_anim.svg');
+		background-size: 100%;
+	}
+	#mail:after {
+		content:'email';
+		left:0px;
+		bottom: -17px;
+		opacity: 0;
+		transition: all 0.25s ease-out;
+	}
+	#mail:hover::after {
+		opacity: 1;
+	}
 	.footer {
 		margin: 10px 25px;
 		text-align: center;
 		position: relative;
 
 	}
-	footer .gl-line {
+	.footer .gl-line {
 		margin: 25px auto 12px;
 	}
-	.menuList .square {
-		margin: 7.5px 0 25px;
-	}
-	@media (min-width: 615px) {
-		.menu {
-			display: none;
-		}
-	}
-	footer .square {
+	.footer .square {
 		position: absolute;
 	    right: 2px;
 	    bottom: 12.25px;
 	}
-	footer .text {
+	.footer .text {
 		font-family: "JosefinSans-Light";
+		font-size: 16px !important;
+	}
+	@media (min-width: 615px) {
+		.footer .text {
+			font-size: 18px !important;
+		}			
 	}
 	.linear:after {
-		    content: '';
-    width: 0%;
-    height: 2px;
-    background: #33CCA0;
-    position: absolute;
-    top: 41px;
-    left: 3px;
-    transition: all 0.3s ease;
+		content: '';
+
+    	background: #33CCA0;
+
+    	width: 0%;
+    	height: 2px;
+
+    	position: absolute;
+    	top: 41px;
+    	left: 3px;
+
+    	transition: all 0.25s ease-out ;
 	}
 	.contact:hover > .linear:after {
 		width: 97%;
 	}
-	.oups {
-
-	}
-	@media (min-width: 480px) {
-		.oups {
-			top: -15px;
-		}
-		.oups:before {
-			/*bottom: -16px;*/
-		}
-	}
-
 
 /* KEYFRAMES-------------------------------------*/
 	.appear {
@@ -1005,129 +1089,3 @@ background-position: center;
 	      transform: scale3d(1, 1, 1);
 	  	}
 	}
-
-
-.contact {
-	background: rgba(255,255,255,0.05);
-	padding: 25px;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	transition: all 0.3s;
-}
-.contact:hover {
-	background: rgba(255,255,255,0.1);
-}
-@media (min-width: 615px) {
-	.contact {
-		flex-direction: row;
-	}
-}
-.contact p {
-	font-size: 36px;
-	font-family: "Josefin Sans";
-	display: flex;
-	text-align: center;
-}
-.contact ul {
-	display: flex;
-	padding: 0 12.5px;
-}
-.contact li {
-	padding: 25px 12.5px;
-	position: relative;
-}
-.contact ul li a {
-	
-}
-#cv, #in, #mail {
-	width: 50px;
-	height: 50px;
-	display: flex;
-	transition: all 0.3s;
-	background-size: 100% !important;
-}
-#cv {
-
-	background: url(../img/cv.svg);
-}
-#cv:hover {
-	background: url(../img/cv_anim.svg);
-	background-size: 100%;
-}
-#cv:after {
-	content:'CV';
-	color: #fff;
-	position: absolute;
-	font-family: "Josefin Sans";
-	left: 23px;
-	bottom: 1px;
-	opacity: 0;
-	transition: all 0.3s
-}
-#cv:hover::after {
-	opacity: 1;
-	
-}
-#in {
-	background: url('../img/linkedin.svg');
-	position: relative;
-	top: 0px;
-}
-#in:hover {
-	background: url('../img/linkedin_anim.svg');
-	background-size: 100%;
-}
-#in:after {
-	content:'LinkedIn';
-	color: #fff;
-	position: absolute;
-	font-family: "Josefin Sans";
-	left: -15px;
-	bottom: -24px;
-	opacity: 0;
-	transition: all 0.3s
-}
-#in:hover::after {
-	opacity: 1;
-	
-}
-#mail {
-	background: url('../img/mail.svg');
-	position: relative;
-	bottom: -7px;
-}
-#mail:hover {
-	background: url('../img/mail_anim.svg');
-	background-size: 100%;
-}
-#mail:after {
-	content:'email';
-	color: #fff;
-	position: absolute;
-	font-family: "Josefin Sans";
-	left:0px;
-	bottom: -17px;
-	opacity: 0;
-	transition: all 0.3s
-}
-#mail:hover::after {
-	opacity: 1;
-	
-}
-
-
-
-
-
-
-
-
-
-
-	
-
-
