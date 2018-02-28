@@ -465,17 +465,13 @@ background-position: center;
 
 		cursor: url(../img/cursor/menu_cursor.png) 2.5 2.5, auto;
 	}
-	.menuOverlay .pro {
-		display: none;
-	}
+	
 	@media (min-width: 480px) {
 		
 		.menuOverlay .menuList {
 			display: none;
 		}
-		.menuOverlay .pro {
-			display: flex;
-		}
+		
 	}
 	.menuOverlay-anim {
 		visibility: visible;
@@ -612,12 +608,14 @@ background-position: center;
 		    	stroke-dashoffset: -800;
 		  	}
 		}
-		.cadrePoly {
-			animation-delay: 0.5s;
-		}
-.whatBox {
-	
-
+.delayLess {
+	animation-delay: 0.25s
+}
+.delay {
+	animation-delay: 0.45s
+}
+.delayPlus {
+	animation-delay: 0.35s;
 }
 .whatBox {
 	width: 75px;
@@ -852,25 +850,9 @@ background-position: center;
 	}
 
 /* PRO ------------------------------------------*/
-	.pro {
-
-		height: 92vh;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	@media (min-width: 615px) {
-		.pro {
-			display: none;
-		}
-	}
-	.pro .text {
-		text-align: center;
-	}
+	
 
 	.footer {
-		height: 10vh;
 		margin: 10px 25px;
 		text-align: center;
 		position: relative;
@@ -1039,6 +1021,80 @@ background-position: center;
 	      transform: scale3d(1, 1, 1);
 	  	}
 	}
+
+
+.contact {
+	background: rgba(255,255,255,0.05);
+	padding: 25px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	transition: all 0.3s;
+}
+.contact:hover {
+	background: rgba(255,255,255,0.075);
+}
+@media (min-width: 615px) {
+	.contact {
+		flex-direction: row;
+	}
+}
+.contact p {
+	font-size: 36px;
+	font-family: "Josefin Sans";
+	display: flex;
+	text-align: center;
+}
+.contact ul {
+	display: flex;
+}
+.contact li {
+	padding: 25px;
+}
+.contact ul li a {
+	
+}
+#cv, #in, #mail {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	transition: all 0.3s;
+	background-size: 100% !important;
+}
+#cv {
+
+	background: url(../img/cv.svg);
+}
+#cv:hover {
+	background: url(../img/cv_anim.svg);
+	background-size: 100%;
+}
+#in {
+	background: url('../img/linkedin.svg');
+}
+#in:hover {
+	background: url('../img/linkedin_anim.svg');
+	background-size: 100%;
+}
+#mail {
+	background: url('../img/mail.svg');
+}
+#mail:hover {
+	background: url('../img/mail_anim.svg');
+	background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 	
 

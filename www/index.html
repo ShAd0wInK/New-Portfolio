@@ -91,7 +91,7 @@ to solve:
 				
 			</div>
 			<svg version="1.1" id="cadre" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="250px" xml:space="preserve">
-			<polyline class="cadrePoly" points="
+			<polyline class="cadrePoly delayLess" points="
 		10, 250
 		10, 232
 		2,232
@@ -101,7 +101,7 @@ to solve:
 		2,2 
 		2,10
 		" />
-		<polyline class="cadrePoly" points="
+		<polyline class="cadrePoly " points="
 		0,10
 		18,10
 		18,2 
@@ -111,7 +111,7 @@ to solve:
 		298,2
 		290,2
 		"/>
-		<polyline class="cadrePoly" points="
+		<polyline class="cadrePoly delayLess" points="
 		290,0
 		290,18
 		298,18
@@ -131,11 +131,29 @@ to solve:
 		2, 248,
 		10,248
 		"/>
+		<polyline class="cadrePoly delay" points="
+		18,123 18,26 26,26 26,18 148,18
+								
+		"/>
+		<polyline class="cadrePoly delay" points="
+		152,18 274,18 274,26 278,26, 282,26, 282, 123				
+		"/>
+		<polyline class="cadrePoly delay" points="
+		282,127 282,224 274,224, 274,232, 152,232	
+		"/>
+		<polyline class="cadrePoly delay" points="
+		148,232 26,232 26,224 18,224, 18,127						
+		"/>
+		<line class="cadreLine delayPlus" x2="24" y2="10" x1="276" y1="10"/>
+		<line class="cadreLine delayPlus" x1="24" y1="240" x2="276" y2="240"/>
+		<line class="cadreLine delayPlus" x1="10" y1="24" x2="10" y2="226"/>
+		<line class="cadreLine delayPlus" x2="290" y2="24" x1="290" y1="226"/>
 	
-		<line class="cadreLine" x2="24" y2="10" x1="276" y1="10"/>
-		<line class="cadreLine" x1="24" y1="240" x2="276" y2="240"/>
-		<line class="cadreLine" x1="10" y1="24" x2="10" y2="226"/>
-		<line class="cadreLine" x2="290" y2="24" x1="290" y1="226"/>
+		<line class="cadreLine" x1="16" y1="18" x2="20" y2="18"/>
+		<line class="cadreLine" x1="282" y1="16" x2="282" y2="20"/>
+	<line class="cadreLine" x1="284" y1="232" x2="280" y2="232"/>
+	<line class="cadreLine" x1="18" y1="234" x2="18" y2="230"/>
+	
 
 		</svg>
 		
@@ -218,23 +236,20 @@ to solve:
 				</div>
 			</div>
 		</section>
-		<section class="pro" >
-			<h3 class="mainTitle oups" >Professionnel</h3>
-			<ul class="menuList">
-				<li class="text"><a href="https://image.noelshack.com/fichiers/2018/09/2/1519743480-cv.jpg" class="link link-anim" title="Curriculum Vitae" target="blank_">CV</a></li>
-				<div class="square"></div>
-				<li class="text"><a href="https://www.linkedin.com/in/alexandre-delaloy-555612153/" class="link link-anim" title="Réseau social des professionnels" target="blank_">LinkedIn</a></li>
-				<div class="square"></div>
-				<li class="text"><a href="mailto:a.delaloy.pro@gmail.com" class="link link-anim">mail</a></li>
-				<div class="square"></div>
-				<li class="text"><a href="https://www.instagram.com/shadowink_/" class="link link-anim" title="Compte professionnel" target="blank_">Instagram</a></li>
-				<div class="square"></div>
+			
+		<section class="contact">
+			<p class="text">Me contacter ? </p>
+			<ul>
+				<li><a href="https://image.noelshack.com/fichiers/2018/09/2/1519743480-cv.jpg" title="Curriculum Vitae" target="blank_" id="cv"></a></li>
+				<li><a href="https://www.linkedin.com/in/alexandre-delaloy-555612153/" title="Réseau social des professionnels" target="blank_" id="in"></a></li>
+				<li><a href="mailto:a.delaloy.pro@gmail.com" id="mail"></a></li>
 			</ul>
+				
 			
 		</section>
 		<footer class="footer" id="pro">
-				<div class="gl-line sized"></div>
-				<p class="text"><a href="https://image.noelshack.com/fichiers/2018/09/2/1519743480-cv.jpg" class="link link-anim" title="Curriculum Vitae" target="blank_">CV</a> - <a href="https://www.linkedin.com/in/alexandre-delaloy-555612153/" class="link link-anim" title="Réseau social des professionnels" target="blank_">LinkedIn</a> - <a href="mailto:a.delaloy.pro@gmail.com" class="link link-anim">mail</a> - <a href="https://www.instagram.com/shadowink_/" class="link link-anim" title="Compte professionnel" target="blank_">Instagram</a></p>
+			<div class="gl-line sized"></div>
+				<p class="text" style="font-size: 18px">Copyright 2018 - Made with 🔥</p>
 				<div class="square footer-square"></div>
 			</footer>
 		<script src="js/data.js"></script>
