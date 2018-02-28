@@ -38,7 +38,7 @@
 	}
 	for (var i = 0; i < gotoProjects.length; i++) {
 		gotoProjects[i].addEventListener('click', function() {
-			document.querySelector('#mf').scrollIntoView({
+			document.querySelector('#projects_anchor').scrollIntoView({
 				behavior: 'smooth',
 			});
 		});

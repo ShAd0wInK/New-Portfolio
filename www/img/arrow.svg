@@ -7,8 +7,8 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="arrow">
             <g id="Group" transform="translate(11.500000, 2.500000) rotate(90.000000) translate(-11.500000, -2.500000) translate(9.000000, -9.000000)">
-                <polygon id="Triangle-2" fill="#33CCA0" fill-rule="nonzero" points="2.5 0 5 5 0 5"></polygon>
-                <path d="M2.5,4.5 L2.5,22.5" id="Line" stroke="#33CCA0" stroke-linecap="square"></path>
+                <polygon id="Triangle-2" fill="#9CA6F4" fill-rule="nonzero" points="2.5 0 5 5 0 5"></polygon>
+                <path d="M2.5,4.5 L2.5,22.5" id="Line" stroke="#9CA6F4" stroke-linecap="square"></path>
             </g>
         </g>
     </g>
