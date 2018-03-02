@@ -27,7 +27,10 @@
 	* transition
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+h2 {
+	display: flex;
 
+}
 /* GLOBAL ---------------------------------------*/
 	body {
 		background-color: #000000; /* GOD DAMN IT WHAT A FAT WALLAPAPER */
@@ -96,16 +99,16 @@
 	}
 	.is-active {
 		height: auto !important;
-		
+
 		display: flex !important;
 
 		visibility: visible !important;
 		opacity: 1 !important;
 	}
-	
+
 /* LINK -----------------------------------------*/
 	.textLink, .link, .link-anim {
-		color: #3396CC;
+		color: #00ADA7;
 
 		font-family: "Josefin Sans";
 		text-decoration: none;
@@ -125,7 +128,7 @@
 	}
 	.link-anim:after {
 	   content: '';
-	   background: #3396CC;
+	   background: #00ADA7;
 
 	   width: 0%;
 	   height: 40%;
@@ -146,19 +149,19 @@
 	   	width: 10px;
 	}
 	::-webkit-scrollbar-track {
-	   	background: #1F1F1F; 
+	   	background: #1F1F1F;
 	}
 	::-webkit-scrollbar-thumb {
-	   	background: #33CCA0; 
+	   	background: #33CCA0;
 	   	transition: all 0.25s ease-out;
 	}
 	::-webkit-scrollbar-thumb:hover {
-	   	background: #3396CC; 
+	   	background: #00ADA7;
 	}
 
 /* CTA ------------------------------------------*/
 	.cta {
-		background: #3396CC;
+		background: #00ADA7;
 
 		width: 5px;
 		height: 100px;
@@ -180,7 +183,7 @@
 		}
 	}
 	.cta:hover {
-		background: #3396CC;
+		background: #00ADA7;
 	}
 	.cta:before {
 		content: 'TOUCH';
@@ -192,8 +195,8 @@
 		left: 50%;
 		top: -25px;
 		transform: translate(-50%, 0);
-	}	
-	
+	}
+
 /* FIXED ----------------------------------------*/
 	#fixed {
 		position: relative;
@@ -202,18 +205,18 @@
 	.decoTop, .decoBottom {
 		width: 25px;
 		height: 25px;
-		
+
 		display: flex;
 		justify-content: space-between;
 
-		position: fixed; 
+		position: fixed;
 		z-index: 666;
 
 		cursor: url(../img/cursor/cursor_link.png) 12 12, pointer;
 	}
 	.decoTop {
 		flex-wrap: wrap;
-		
+
 		top: 12px;
 		left: 12px;
 	}
@@ -231,7 +234,7 @@
 		font-family: Helvetica;
 
 		position: fixed;
-		z-index: 666; 
+		z-index: 666;
 		bottom: 6px;
 		left: 12px;
 
@@ -244,7 +247,7 @@
 
 		font-family: "Josefin Sans";
 		font-size: 16px;
-    	
+
     	display: flex;
 
     	position: absolute;
@@ -270,7 +273,7 @@
 		width: 10px;
 		height: 10px;
 		margin-bottom: 5px;
-		
+
 		transition: all 0.25s ease-out;
 	}
 	.square-anim {
@@ -300,7 +303,7 @@
 
 		font-family: "Josefin Sans";
 		font-size: 16px;
-    	
+
     	position: absolute;
     	z-index: -1;
     	top: 0;
@@ -371,10 +374,10 @@
 		content: 'MENU';
 		font-family: "Josefin Sans";
 		font-size: 16px;
-    	
+
     	width: 0%;
     	height: 0px;
-    	
+
     	position: absolute;
     	z-index: -1;
     	top: 0;
@@ -515,7 +518,7 @@
 
 		text-align: center;
 		letter-spacing: 0.12em;
-		
+
 	}
 	.homeSvg {
 		position: absolute;
@@ -609,8 +612,8 @@
 	#infos {
 		background: rgba(255,255,255,0.05);
 
-		height: 100vh;
-		padding: 0 45px;
+		height: auto;
+		padding:0 45px;
 
 		display: flex;
 		flex-direction: column;
@@ -623,12 +626,13 @@
 	}
 	@media (min-width: 666px) {
 		#infos {
+			height: 100vh;
 			background: url(../img/gotohetic.jpg) no-repeat;
 			background-size: cover;
 		}
 	}
 	#infos .text {
-		margin-bottom: 25px;
+		margin: 25px 0;
 
 		text-align: center;
 	}
@@ -636,6 +640,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-bottom: 25px;
 	}
 	.dev a img {
 		width: 30px;
@@ -670,16 +675,9 @@
 	@media (min-width: 615px) {
 		.article {
 			width: 41%;
-			
+
 			margin: 0 25px;
-		}	
-	}
-	@media (min-width: 914px) {
-		.article {
-			width: 27%;
-			
-			margin: 0 25px;
-		}	
+		}
 	}
 	.article li {
 		margin-bottom: 12.5px;
@@ -699,7 +697,7 @@
 		color: #33CCA0;
 	}
 	.article-link {
-		color: #3396CC;
+		color: #00ADA7;
 
 		font-family: "Josefin Sans";
 		font-size: 20px;
@@ -744,7 +742,7 @@
 		opacity: 1;
 	}
 	.article-fullscreen:after {
-	   color: #3396CC;
+	   color: #00ADA7;
 
 	   font-size: 36px;
 	   font-family: "JosefinSans-SemiBold";
@@ -764,7 +762,7 @@
 	}
 	.article-content {
 		height: 0;
-		
+
 		display: none;
 		flex-direction: column;
 
@@ -812,9 +810,9 @@
 
 /* CONTACT --------------------------------------*/
 	.contact {
-		background: rgba(255,255,255,0.05);
 
-		padding: 25px;
+		padding: 75px 0;
+		margin: 75px 0;
 
 		display: flex;
 		flex-direction: column;
@@ -829,7 +827,7 @@
 		}
 	}
 	.contact:hover {
-		background: rgba(255,255,255,0.1);
+		background: rgba(255,255,255,0.05);
 	}
 	.contact .text {
 		font-size: 36px;
@@ -896,7 +894,7 @@
 	}
 	#in:hover::after {
 		opacity: 1;
-		
+
 	}
 	#mail {
 		background: url('../img/mail.svg');
@@ -938,7 +936,7 @@
 	@media (min-width: 615px) {
 		.footer .text {
 			font-size: 18px !important;
-		}			
+		}
 	}
 	.linear:after {
 		content: '';
