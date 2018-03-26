@@ -685,7 +685,7 @@ h2 {
 	.article-mainTitle {
 		margin-bottom: 25px !important;
 
-		font-size: 24px;
+		font-size: 30px;
 		font-family: "JosefinSans-SemiBold";
 	}
 	.article-title {
@@ -812,6 +812,12 @@ h2 {
 	}
 	#us:after {
 		content: 'UnrealSeoul';
+	}
+	#ks {
+		background: url(../img/articles/ks.jpg) no-repeat;
+	}
+	#ks:after {
+		content: 'kisu';
 	}
 
 /* CONTACT --------------------------------------*/

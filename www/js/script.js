@@ -55,7 +55,7 @@
 		lineCrossR = document.querySelector('.lineCrossR');
 		lineShort = document.querySelector('.line-short');
 		menuOverlay = document.querySelector('.menuOverlay');
-		squares = document.querySelectorAll('.square'); 
+		squares = document.querySelectorAll('.square');
 		menuList = document.querySelector('.menuList');
 		menuList_link = document.querySelectorAll('.menuList-link');
 		appear = document.querySelectorAll('.appear');
@@ -101,7 +101,7 @@
 		};
 		btt.classList.toggle('btt-anim');
 	});
-		
+
 // PROJECTS DISPLAY -----------------------------
 	var articleFullscreen = document.querySelectorAll('.article-fullscreen');
 		 articleContent = document.querySelectorAll('.article-content');
@@ -122,7 +122,7 @@
 
 // CTA MOBILE -----------------------------------
 	var cta = document.querySelector('.cta');
-	
+
 	cta.addEventListener('click', function() {
 		cta.style.visibility = 'hidden';
 		cta.style.opacity = '0';
@@ -145,6 +145,3 @@
 		whatBox.style.visibility = 'hidden';
 			whatBox.style.opacity = '0';
 		});
-
-
-			
