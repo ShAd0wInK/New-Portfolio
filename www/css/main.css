@@ -819,7 +819,18 @@ h2 {
 	#ks:after {
 		content: 'kisu';
 	}
-
+	#al {
+		background: url(../img/articles/al.jpg) no-repeat;
+	}
+	#al:after {
+		content: 'alost';
+	}
+	#inf {
+		background: url(../img/articles/in.jpg) no-repeat;
+	}
+	#inf:after {
+		content: 'INFINITY';
+	}
 /* CONTACT --------------------------------------*/
 	.contact {
 
